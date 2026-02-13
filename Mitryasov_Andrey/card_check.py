@@ -1,5 +1,4 @@
 # Валидация номера карты
-
 def validate_card(number: str)->bool:
 
     card_number = ''.join(num for num in number if num.isdigit())
@@ -10,7 +9,6 @@ def validate_card(number: str)->bool:
     return True
 
 # Проверка по алгоритму Луна
-    
 def luhns_check(number: str)->bool:
 
     if not validate_card(number):
@@ -51,11 +49,9 @@ def luhns_check(number: str)->bool:
         return True
 
 # Вызов функции
-
 card_number = input("Введите номер карты: ")
 
 # Функция возвращает True, если карта валидная, и False, если нет. Выводим результат.
-
 result = luhns_check(card_number)
 
 if result:
