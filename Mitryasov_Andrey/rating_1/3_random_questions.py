@@ -1,6 +1,7 @@
 import random
 import json
 
+#  меняй!
 questions_directory = "Mitryasov_Andrey\\rating_1\\questions.json"
 
 with open(questions_directory, "r", encoding="UTF-8") as file:
