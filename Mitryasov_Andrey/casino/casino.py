@@ -1,6 +1,14 @@
 import random
 import time
 import argparse
+import miniaudio
+
+def play_simple(filename):
+    device = miniaudio.PlaybackDevice()
+    stream = miniaudio.stream_file(filename)
+    device.start(stream)
+    return device, stream
+
 
 def show_balance(balance: int) -> None:
     print(f"Ваш баланс: {balance}")
@@ -36,7 +44,7 @@ def interface(balance: int,
 
 
 def casino(balance: int, bet: int) -> int:
-    emojis = ["🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🫐", "🥝"]
+    emojis = ["🍏", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🫐"]
     if balance < bet:
         print("У тебя нет денег. Иди работай.")
         return balance
@@ -55,6 +63,17 @@ def casino(balance: int, bet: int) -> int:
         # Финальный выбор для слота
         final_char = random.choice(emojis)
         results.append(final_char)
+
+        # Не спрашивайте
+        if "🍌" == final_char:
+            play_simple(r"sounds\banani.mp3")
+        elif "🫐" == final_char:
+            play_simple(r"sounds\slivi.mp3")
+        elif "🍇" == final_char:
+            play_simple(r"sounds\vinograd.mp3")
+        elif "🍏" == final_char:
+            play_simple(r"sounds\yabloki_na_zelenih_est.mp3")
+
         print(f"{final_char}  ", end="", flush=True) # Фиксируем и ставим пробел
         time.sleep(0.5) # Пауза перед следующим слотом
 
