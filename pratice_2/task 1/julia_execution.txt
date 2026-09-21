@@ -1,0 +1,781 @@
+3
+; Function Signature: greatest_common_divisor(Array{Int64, 1})
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:5 within `greatest_common_divisor`
+; Function Attrs: uwtable
+define i64 @julia_greatest_common_divisor_473(ptr noundef nonnull align 8 dereferenceable(24) %"numbers::Array") #0 {
+top:
+  %gcframe1 = alloca [4 x ptr], align 16
+  call void @llvm.memset.p0.i64(ptr align 16 %gcframe1, i8 0, i64 32, i1 true)
+  %"new::Tuple" = alloca [1 x [2 x i64]], align 8
+  %"new::Tuple60" = alloca [1 x [2 x i64]], align 8
+  %"new::Tuple67" = alloca [1 x [2 x i64]], align 8
+  %pgcstack = call ptr inttoptr (i64 140736802612576 to ptr)() #19
+  store i64 8, ptr %gcframe1, align 8
+  %frame.prev = getelementptr inbounds ptr, ptr %gcframe1, i64 1
+  %task.gcstack = load ptr, ptr %pgcstack, align 8
+  store ptr %task.gcstack, ptr %frame.prev, align 8
+  store ptr %gcframe1, ptr %pgcstack, align 8
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:6 within `greatest_common_divisor`
+; тФМ @ abstractarray.jl:1238 within `isempty`
+; тФВтФМ @ essentials.jl:11 within `length`
+    %"numbers::Array.size_ptr" = getelementptr inbounds i8, ptr %"numbers::Array", i64 16
+    %"numbers::Array.size.0.copyload" = load i64, ptr %"numbers::Array.size_ptr", align 8
+; тФВтФФ
+; тФВтФМ @ promotion.jl:637 within `==`
+    %.not132 = icmp eq i64 %"numbers::Array.size.0.copyload", 0
+; тФФтФФ
+  br i1 %.not132, label %L6, label %L23
+
+L6:                                               ; preds = %top
+  %0 = call [1 x ptr] @j_ArgumentError_475(ptr nonnull @"jl_global#476.jit")
+  %gc_slot_addr_0 = getelementptr inbounds ptr, ptr %gcframe1, i64 2
+  %1 = extractvalue [1 x ptr] %0, 0
+  store ptr %1, ptr %gc_slot_addr_0, align 8
+  %ptls_field161 = getelementptr inbounds i8, ptr %pgcstack, i64 16
+  %ptls_load162 = load ptr, ptr %ptls_field161, align 8
+  %"box::ArgumentError" = call noalias nonnull align 8 dereferenceable(16) ptr @ijl_gc_small_alloc(ptr %ptls_load162, i32 360, i32 16, i64 140734410451232) #15
+  %"box::ArgumentError.tag_addr" = getelementptr inbounds i64, ptr %"box::ArgumentError", i64 -1
+  store atomic i64 140734410451232, ptr %"box::ArgumentError.tag_addr" unordered, align 8
+  store ptr %1, ptr %"box::ArgumentError", align 8
+  store ptr null, ptr %gc_slot_addr_0, align 8
+  call void @ijl_throw(ptr nonnull %"box::ArgumentError")
+  unreachable
+
+L23:                                              ; preds = %top
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:8 within `greatest_common_divisor`
+; тФМ @ essentials.jl:920 within `getindex`
+   %memoryref_data = load ptr, ptr %"numbers::Array", align 8
+   %2 = getelementptr inbounds { ptr, ptr }, ptr %"numbers::Array", i64 0, i32 1
+   %memoryref_mem = load ptr, ptr %2, align 8
+   %3 = load i64, ptr %memoryref_data, align 8
+; тФФ
+; тФМ @ int.jl:188 within `abs`
+; тФВтФМ @ int.jl:142 within `flipsign`
+    %4 = call i64 @llvm.abs.i64(i64 %3, i1 false)
+; тФФтФФ
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:9 within `greatest_common_divisor`
+; тФМ @ range.jl:5 within `Colon`
+; тФВтФМ @ range.jl:415 within `UnitRange`
+; тФВтФВтФМ @ range.jl:426 within `unitrange_last`
+     %value_phi = call i64 @llvm.smax.i64(i64 %"numbers::Array.size.0.copyload", i64 1)
+; тФФтФФтФФ
+; тФМ @ array.jl:935 within `getindex`
+   store i64 2, ptr %"new::Tuple", align 8
+   %"new::UnitRange.sroa.2.0..sroa_idx" = getelementptr inbounds i8, ptr %"new::Tuple", i64 8
+   store i64 %value_phi, ptr %"new::UnitRange.sroa.2.0..sroa_idx", align 8
+; тФВтФМ @ abstractarray.jl:699 within `checkbounds` @ abstractarray.jl:689
+; тФВтФВтФМ @ abstractarray.jl:757 within `checkindex`
+; тФВтФВтФВтФМ @ range.jl:688 within `isempty`
+; тФВтФВтФВтФВтФМ @ operators.jl:425 within `>`
+; тФВтФВтФВтФВтФВтФМ @ int.jl:83 within `<`
+        %5 = icmp slt i64 %"numbers::Array.size.0.copyload", 2
+; тФВтФВтФВтФФтФФтФФ
+; тФВтФВтФВ @ abstractarray.jl:757 within `checkindex` @ abstractarray.jl:754
+; тФВтФВтФВтФМ @ int.jl:519 within `<`
+      %6 = icmp ne i64 %"numbers::Array.size.0.copyload", 1
+; тФВтФВтФВтФФ
+; тФВтФВтФВтФМ @ int.jl:86 within `-`
+      %7 = add nsw i64 %value_phi, -1
+; тФВтФВтФВтФФ
+; тФВтФВтФВтФМ @ int.jl:519 within `<`
+      %8 = icmp ult i64 %7, %"numbers::Array.size.0.copyload"
+; тФВтФВтФВтФФ
+; тФВтФВтФВ @ abstractarray.jl:757 within `checkindex`
+; тФВтФВтФВтФМ @ bool.jl:40 within `&`
+      %9 = and i1 %6, %8
+; тФВтФВтФВтФФ
+; тФВтФВтФВтФМ @ bool.jl:41 within `|`
+      %10 = or i1 %5, %8
+; тФВтФВтФФтФФ
+; тФВтФВ @ abstractarray.jl:699 within `checkbounds`
+    br i1 %10, label %L61, label %L58
+
+L58:                                              ; preds = %L23
+    call void @j_throw_boundserror_485(ptr nonnull %"numbers::Array", ptr nocapture nonnull readonly %"new::Tuple") #6
+    unreachable
+
+L61:                                              ; preds = %L23
+; тФВтФФ
+; тФВ @ array.jl:937 within `getindex`
+; тФВтФМ @ abstractarray.jl:822 within `similar` @ array.jl:377
+; тФВтФВтФМ @ boot.jl:660 within `Array` @ boot.jl:647
+; тФВтФВтФВтФМ @ boot.jl:588 within `GenericMemory`
+      %memorynew_empty = icmp eq i64 %7, 0
+      br i1 %memorynew_empty, label %retval, label %nonemptymem
+
+L78:                                              ; preds = %retval
+; тФВтФФтФФтФФ
+; тФВ @ array.jl:939 within `getindex`
+; тФВтФМ @ array.jl:299 within `copyto!`
+; тФВтФВтФМ @ array.jl:304 within `_copyto_impl!`
+; тФВтФВтФВтФМ @ range.jl:5 within `Colon`
+; тФВтФВтФВтФВтФМ @ range.jl:415 within `UnitRange`
+       store i64 1, ptr %"new::Tuple60", align 8
+       %"new::UnitRange59.sroa.2.0..sroa_idx" = getelementptr inbounds i8, ptr %"new::Tuple60", i64 8
+       store i64 %7, ptr %"new::UnitRange59.sroa.2.0..sroa_idx", align 8
+; тФВтФВтФВтФФтФФ
+; тФВтФВтФВтФМ @ abstractarray.jl:699 within `checkbounds` @ abstractarray.jl:689
+; тФВтФВтФВтФВтФМ @ abstractarray.jl:757 within `checkindex` @ abstractarray.jl:754
+; тФВтФВтФВтФВтФВтФМ @ int.jl:86 within `-`
+        %11 = add nsw i64 %value_phi, -2
+; тФВтФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВтФВтФМ @ int.jl:519 within `<`
+        %.not148 = icmp ult i64 %11, %7
+; тФВтФВтФВтФВтФФтФФ
+; тФВтФВтФВтФВ @ abstractarray.jl:699 within `checkbounds`
+      br i1 %.not148, label %L108, label %L103
+
+L103:                                             ; preds = %L78
+      store ptr null, ptr %gc_slot_addr_1156, align 8
+      store ptr %"new::Array", ptr %gc_slot_addr_0157, align 8
+      call void @j_throw_boundserror_485(ptr nonnull %"new::Array", ptr nocapture nonnull readonly %"new::Tuple60") #6
+      unreachable
+
+L108:                                             ; preds = %L78
+; тФВтФВтФВтФФ
+; тФВтФВтФВ @ array.jl:305 within `_copyto_impl!`
+; тФВтФВтФВтФМ @ range.jl:5 within `Colon`
+; тФВтФВтФВтФВтФМ @ range.jl:415 within `UnitRange`
+       store i64 2, ptr %"new::Tuple67", align 8
+       %"new::UnitRange66.sroa.2.0..sroa_idx" = getelementptr inbounds i8, ptr %"new::Tuple67", i64 8
+       store i64 %value_phi, ptr %"new::UnitRange66.sroa.2.0..sroa_idx", align 8
+; тФВтФВтФВтФФтФФ
+; тФВтФВтФВтФМ @ abstractarray.jl:699 within `checkbounds`
+      br i1 %9, label %L154, label %L136
+
+L136:                                             ; preds = %L108
+      store ptr null, ptr %gc_slot_addr_1156, align 8
+      store ptr null, ptr %gc_slot_addr_0157, align 8
+      call void @j_throw_boundserror_485(ptr nonnull %"numbers::Array", ptr nocapture nonnull readonly %"new::Tuple67") #6
+      unreachable
+
+L154:                                             ; preds = %L108
+; тФВтФВтФВтФФ
+; тФВтФВтФВ @ array.jl:308 within `_copyto_impl!`
+; тФВтФВтФВтФМ @ genericmemory.jl:125 within `unsafe_copyto!`
+; тФВтФВтФВтФВтФМ @ int.jl:88 within `*`
+       %12 = shl i64 %7, 3
+; тФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВтФМ @ cmem.jl:28 within `memmove`
+; тФВтФВтФВтФВтФВтФМ @ essentials.jl:687 within `cconvert`
+; тФВтФВтФВтФВтФВтФВтФМ @ number.jl:7 within `convert`
+; тФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:962 within `UInt64`
+; тФВтФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:932 within `toUInt64`
+; тФВтФВтФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:821 within `check_sign_bit`
+; тФВтФВтФВтФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:806 within `is_top_bit_set`
+             %.not = icmp sgt i64 %12, -1
+; тФВтФВтФВтФВтФВтФВтФВтФВтФВтФВтФФ
+            br i1 %.not, label %L171, label %L163
+
+L163:                                             ; preds = %L154
+            %13 = load ptr, ptr getelementptr inbounds (i8, ptr @jl_small_typeof, i64 320), align 8
+            call void @j_throw_inexacterror_483(ptr nonnull @"jl_sym#convert#484.jit", ptr nonnull %13, i64 signext %12) #6
+            unreachable
+
+L171:                                             ; preds = %L154
+; тФВтФВтФВтФФтФФтФФтФФтФФтФФтФФ
+; тФВтФВтФВ @ array.jl:306 within `_copyto_impl!`
+; тФВтФВтФВтФМ @ boot.jl:595 within `memoryref`
+      %memoryref_data93 = getelementptr i8, ptr %memoryref_data, i64 8
+; тФВтФВтФВтФФ
+; тФВтФВтФВ @ array.jl:308 within `_copyto_impl!`
+; тФВтФВтФВтФМ @ genericmemory.jl:125 within `unsafe_copyto!`
+; тФВтФВтФВтФВтФМ @ cmem.jl:28 within `memmove`
+       call void @llvm.memmove.p0.p0.i64(ptr nonnull align 1 %memory_data, ptr align 1 %memoryref_data93, i64 %12, i1 false)
+; тФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВ @ genericmemory.jl:131 within `unsafe_copyto!`
+      br label %L182
+
+L182:                                             ; preds = %retval, %L171
+; тФФтФФтФФтФФ
+; тФМ @ array.jl:901 within `iterate` @ array.jl:901
+   br i1 %memorynew_empty, label %L263, label %L215
+
+L215:                                             ; preds = %L182
+; тФФ
+  %invariant.gep = getelementptr i8, ptr %memory_data, i64 -8
+  br label %L217
+
+L217:                                             ; preds = %L257, %L215
+  %value_phi29.in = phi ptr [ %memory_data, %L215 ], [ %gep, %L257 ]
+  %value_phi30 = phi i64 [ 2, %L215 ], [ %15, %L257 ]
+  %value_phi31 = phi i64 [ %4, %L215 ], [ %value_phi32.lcssa, %L257 ]
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl within `greatest_common_divisor`
+; тФМ @ array.jl:901 within `iterate`
+   %value_phi29 = load i64, ptr %value_phi29.in, align 8
+; тФФ
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:11 within `greatest_common_divisor`
+; тФМ @ operators.jl:321 within `!=`
+; тФВтФМ @ promotion.jl:637 within `==`
+    %.not139144 = icmp eq i64 %value_phi29, 0
+; тФФтФФ
+  br i1 %.not139144, label %L228, label %L226.lr.ph
+
+L226.lr.ph:                                       ; preds = %L217
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:10 within `greatest_common_divisor`
+; тФМ @ int.jl:188 within `abs`
+; тФВтФМ @ int.jl:142 within `flipsign`
+    %14 = call i64 @llvm.abs.i64(i64 %value_phi29, i1 false)
+; тФФтФФ
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:11 within `greatest_common_divisor`
+  br label %L226
+
+L226:                                             ; preds = %after_srem, %L226.lr.ph
+  %value_phi33146 = phi i64 [ %14, %L226.lr.ph ], [ %21, %after_srem ]
+  %value_phi32145 = phi i64 [ %value_phi31, %L226.lr.ph ], [ %value_phi33146, %after_srem ]
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:12 within `greatest_common_divisor`
+; тФМ @ int.jl:302 within `rem`
+   %cond = icmp eq i64 %value_phi33146, -1
+   br i1 %cond, label %L228, label %after_srem
+
+L228:                                             ; preds = %after_srem, %L226, %L217
+   %value_phi32.lcssa = phi i64 [ %value_phi31, %L217 ], [ %value_phi33146, %after_srem ], [ -1, %L226 ]
+; тФФ
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:14 within `greatest_common_divisor`
+; тФМ @ array.jl:901 within `iterate`
+; тФВтФМ @ int.jl:519 within `<`
+    %exitcond.not = icmp eq i64 %value_phi30, %value_phi
+; тФВтФФ
+   br i1 %exitcond.not, label %L263, label %L257
+
+L257:                                             ; preds = %L228
+; тФВтФМ @ essentials.jl:920 within `getindex`
+    %memoryref_offset = shl i64 %value_phi30, 3
+    %gep = getelementptr i8, ptr %invariant.gep, i64 %memoryref_offset
+; тФВтФФ
+; тФВтФМ @ int.jl:87 within `+`
+    %15 = add i64 %value_phi30, 1
+    br label %L217
+
+L263:                                             ; preds = %L228, %L182
+    %value_phi53 = phi i64 [ %4, %L182 ], [ %value_phi32.lcssa, %L228 ]
+    %frame.prev176 = load ptr, ptr %frame.prev, align 8
+    store ptr %frame.prev176, ptr %pgcstack, align 8
+; тФФтФФ
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:16 within `greatest_common_divisor`
+  ret i64 %value_phi53
+
+nonemptymem:                                      ; preds = %L61
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:9 within `greatest_common_divisor`
+; тФМ @ array.jl:937 within `getindex`
+; тФВтФМ @ abstractarray.jl:822 within `similar` @ array.jl:377
+; тФВтФВтФМ @ boot.jl:660 within `Array` @ boot.jl:647
+; тФВтФВтФВтФМ @ boot.jl:588 within `GenericMemory`
+      %16 = icmp slt i64 %"numbers::Array.size.0.copyload", 1152921504606846977
+      br i1 %16, label %pass, label %fail
+
+fail:                                             ; preds = %nonemptymem
+      call void @jl_argument_error(ptr nonnull @"_j_str_invalid GenericMemory siz...#2")
+      unreachable
+
+pass:                                             ; preds = %nonemptymem
+      %17 = shl i64 %7, 3
+      %ptls_field = getelementptr inbounds i8, ptr %pgcstack, i64 16
+      %ptls_load = load ptr, ptr %ptls_field, align 8
+      %gc_slot_addr_1155 = getelementptr inbounds ptr, ptr %gcframe1, i64 3
+      store ptr %memoryref_mem, ptr %gc_slot_addr_1155, align 8
+      %"Memory{Int64}[]" = call noalias nonnull align 16 ptr @jl_alloc_genericmemory_unchecked(ptr %ptls_load, i64 %17, ptr nonnull @"+Core.GenericMemory#479.jit") #20
+      store i64 %7, ptr %"Memory{Int64}[]", align 8
+      br label %retval
+
+retval:                                           ; preds = %pass, %L61
+      %memoryref_mem23 = phi ptr [ %"Memory{Int64}[]", %pass ], [ @"jl_global#478.jit", %L61 ]
+; тФВтФВтФВтФФ
+; тФВтФВтФВ @ boot.jl:660 within `Array` @ boot.jl:648
+; тФВтФВтФВтФМ @ boot.jl:593 within `memoryref`
+      %memory_data_ptr = getelementptr inbounds { i64, ptr }, ptr %memoryref_mem23, i64 0, i32 1
+      %memory_data = load ptr, ptr %memory_data_ptr, align 8
+      %gc_slot_addr_1156 = getelementptr inbounds ptr, ptr %gcframe1, i64 3
+      store ptr %memoryref_mem, ptr %gc_slot_addr_1156, align 8
+      %gc_slot_addr_0157 = getelementptr inbounds ptr, ptr %gcframe1, i64 2
+      store ptr %memoryref_mem23, ptr %gc_slot_addr_0157, align 8
+; тФВтФВтФВтФФ
+     %ptls_field174 = getelementptr inbounds i8, ptr %pgcstack, i64 16
+     %ptls_load175 = load ptr, ptr %ptls_field174, align 8
+     %"new::Array" = call noalias nonnull align 8 dereferenceable(32) ptr @ijl_gc_small_alloc(ptr %ptls_load175, i32 408, i32 32, i64 140734324916928) #15
+     %"new::Array.tag_addr" = getelementptr inbounds i64, ptr %"new::Array", i64 -1
+     store atomic i64 140734324916928, ptr %"new::Array.tag_addr" unordered, align 8
+     %18 = getelementptr inbounds i8, ptr %"new::Array", i64 8
+     store ptr %memory_data, ptr %"new::Array", align 8
+     store ptr %memoryref_mem23, ptr %18, align 8
+     %"new::Array.size_ptr" = getelementptr inbounds i8, ptr %"new::Array", i64 16
+     store i64 %7, ptr %"new::Array.size_ptr", align 8
+; тФВтФФтФФ
+; тФВ @ array.jl:938 within `getindex`
+; тФВтФМ @ operators.jl:425 within `>`
+; тФВтФВтФМ @ int.jl:83 within `<`
+     %19 = icmp sgt i64 %"numbers::Array.size.0.copyload", 1
+     %20 = icmp ne i64 %7, 0
+; тФВтФФтФФ
+   %or.cond = and i1 %19, %20
+   br i1 %or.cond, label %L78, label %L182
+
+after_srem:                                       ; preds = %L226
+; тФФ
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:12 within `greatest_common_divisor`
+; тФМ @ int.jl:302 within `rem`
+   %21 = srem i64 %value_phi32145, %value_phi33146
+; тФФ
+;  @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:11 within `greatest_common_divisor`
+; тФМ @ operators.jl:321 within `!=`
+; тФВтФМ @ promotion.jl:637 within `==`
+    %.not139 = icmp eq i64 %21, 0
+; тФФтФФ
+  br i1 %.not139, label %L228, label %L226
+}
+	.text
+	.file	"greatest_common_divisor"
+	.section	.ltext,"axl",@progbits
+	.globl	julia_greatest_common_divisor_515 # -- Begin function julia_greatest_common_divisor_515
+	.p2align	4, 0x90
+	.type	julia_greatest_common_divisor_515,@function
+julia_greatest_common_divisor_515:      # @julia_greatest_common_divisor_515
+; Function Signature: greatest_common_divisor(Array{Int64, 1})
+; тФМ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:5 within `greatest_common_divisor`
+	.cfi_startproc
+# %bb.0:                                # %top
+	#DEBUG_VALUE: greatest_common_divisor:numbers <- [$rcx+0]
+	push	rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset rbp, -16
+	mov	rbp, rsp
+	.cfi_def_cfa_register rbp
+	push	r15
+	push	r14
+	push	r13
+	push	r12
+	push	rsi
+	push	rdi
+	push	rbx
+	sub	rsp, 152
+	.cfi_offset rbx, -72
+	.cfi_offset rdi, -64
+	.cfi_offset rsi, -56
+	.cfi_offset r12, -48
+	.cfi_offset r13, -40
+	.cfi_offset r14, -32
+	.cfi_offset r15, -24
+	mov	rdi, rcx
+	vxorps	xmm0, xmm0, xmm0
+	vmovups	ymmword ptr [rbp - 96], ymm0
+	movabs	rax, 140736802612576
+	vzeroupper
+	call	rax
+	mov	r8, rax
+	mov	qword ptr [rbp - 96], 8
+	mov	rax, qword ptr [rax]
+	mov	qword ptr [rbp - 88], rax
+	lea	rax, [rbp - 96]
+	mov	qword ptr [r8], rax
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:6 within `greatest_common_divisor`
+; тФВтФМ @ abstractarray.jl:1238 within `isempty`
+; тФВтФВтФМ @ essentials.jl:11 within `length`
+	mov	rbx, qword ptr [rdi + 16]
+; тФВтФВтФФ
+; тФВтФВтФМ @ promotion.jl:637 within `==`
+	test	rbx, rbx
+; тФВтФФтФФ
+	je	.LBB0_27
+# %bb.1:                                # %L23
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:8 within `greatest_common_divisor`
+; тФВтФМ @ essentials.jl:920 within `getindex`
+	mov	rdx, qword ptr [rdi]
+	mov	rcx, qword ptr [rdx]
+; тФВтФФ
+; тФВтФМ @ int.jl:188 within `abs`
+; тФВтФВтФМ @ int.jl:142 within `flipsign`
+	mov	rax, rcx
+	neg	rax
+	cmovs	rax, rcx
+; тФВтФФтФФ
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:9 within `greatest_common_divisor`
+; тФВтФМ @ range.jl:5 within `Colon`
+; тФВтФВтФМ @ range.jl:415 within `UnitRange`
+; тФВтФВтФВтФМ @ range.jl:426 within `unitrange_last`
+	cmp	rbx, 2
+	mov	r13d, 1
+	cmovge	r13, rbx
+; тФВтФФтФФтФФ
+; тФВтФМ @ array.jl:935 within `getindex`
+; тФВтФВтФМ @ abstractarray.jl:699 within `checkbounds` @ abstractarray.jl:689
+; тФВтФВтФВтФМ @ abstractarray.jl:757 within `checkindex` @ abstractarray.jl:754
+; тФВтФВтФВтФВтФМ @ int.jl:519 within `<`
+	cmp	rbx, 1
+	setne	cl
+; тФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВтФМ @ int.jl:86 within `-`
+	lea	rsi, [r13 - 1]
+; тФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВтФМ @ int.jl:519 within `<`
+	cmp	rsi, rbx
+	setb	r9b
+; тФВтФФтФФтФФтФФ
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:8 within `greatest_common_divisor`
+; тФВтФМ @ essentials.jl:920 within `getindex`
+	mov	r12, qword ptr [rdi + 8]
+; тФВтФФ
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:9 within `greatest_common_divisor`
+; тФВтФМ @ array.jl:935 within `getindex`
+	mov	qword ptr [rbp - 168], 2
+	mov	qword ptr [rbp - 160], r13
+; тФВтФФ
+; тФВтФМ @ range.jl:5 within `Colon`
+; тФВтФВтФМ @ range.jl:415 within `UnitRange`
+; тФВтФВтФВтФМ @ range.jl:426 within `unitrange_last`
+	cmp	rbx, 2
+; тФВтФФтФФтФФ
+; тФВтФМ @ array.jl:935 within `getindex`
+; тФВтФВтФМ @ abstractarray.jl:699 within `checkbounds`
+	jl	.LBB0_3
+# %bb.2:                                # %L23
+	cmp	rsi, rbx
+	jae	.LBB0_28
+.LBB0_3:                                # %L61
+; тФВтФВтФФ
+; тФВтФВ @ array.jl:937 within `getindex`
+; тФВтФВтФМ @ abstractarray.jl:822 within `similar` @ array.jl:377
+; тФВтФВтФВтФМ @ boot.jl:660 within `Array` @ boot.jl:647
+; тФВтФВтФВтФВтФМ @ boot.jl:588 within `GenericMemory`
+	test	rsi, rsi
+	mov	qword ptr [rbp - 120], rax      # 8-byte Spill
+	mov	qword ptr [rbp - 104], rdx      # 8-byte Spill
+	mov	byte ptr [rbp - 58], cl         # 1-byte Spill
+	mov	byte ptr [rbp - 57], r9b        # 1-byte Spill
+	je	.LBB0_4
+# %bb.19:                               # %nonemptymem
+	movabs	rax, 1152921504606846977
+	cmp	rbx, rax
+	jge	.LBB0_33
+# %bb.20:                               # %pass
+	lea	rdx, [8*rsi]
+	mov	rcx, qword ptr [r8 + 16]
+	mov	qword ptr [rbp - 72], r12
+	mov	r14, r8
+	movabs	r8, offset ".L+Core.GenericMemory#521.jit"
+	movabs	rax, offset jl_alloc_genericmemory_unchecked
+	call	rax
+	mov	r8, r14
+	mov	r15, rax
+	mov	qword ptr [rax], rsi
+	jmp	.LBB0_21
+.LBB0_4:
+	movabs	r15, offset ".Ljl_global#520.jit"
+.LBB0_21:                               # %retval
+; тФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВ @ boot.jl:660 within `Array` @ boot.jl:648
+; тФВтФВтФВтФВтФМ @ boot.jl:593 within `memoryref`
+	mov	r14, qword ptr [r15 + 8]
+	mov	qword ptr [rbp - 72], r12
+	mov	qword ptr [rbp - 80], r15
+	mov	qword ptr [rbp - 112], r8       # 8-byte Spill
+; тФВтФВтФВтФВтФФ
+	mov	rcx, qword ptr [r8 + 16]
+	movabs	rax, offset ijl_gc_small_alloc
+	movabs	r12, 140734324916928
+	mov	edx, 408
+	mov	r8d, 32
+	mov	r9, r12
+	call	rax
+	mov	qword ptr [rax - 8], r12
+	mov	qword ptr [rax], r14
+	mov	qword ptr [rax + 8], r15
+	mov	qword ptr [rax + 16], rsi
+; тФВтФВтФФтФФ
+; тФВтФВ @ array.jl:938 within `getindex`
+; тФВтФВтФМ @ operators.jl:425 within `>`
+; тФВтФВтФВтФМ @ int.jl:83 within `<`
+	cmp	rbx, 2
+; тФВтФВтФФтФФ
+	jl	.LBB0_9
+# %bb.22:                               # %retval
+	test	rsi, rsi
+	je	.LBB0_9
+# %bb.5:                                # %L78
+; тФВтФВ @ array.jl:939 within `getindex`
+; тФВтФВтФМ @ array.jl:299 within `copyto!`
+; тФВтФВтФВтФМ @ array.jl:304 within `_copyto_impl!`
+; тФВтФВтФВтФВтФМ @ range.jl:5 within `Colon`
+; тФВтФВтФВтФВтФВтФМ @ range.jl:415 within `UnitRange`
+	mov	qword ptr [rbp - 152], 1
+	mov	qword ptr [rbp - 144], rsi
+; тФВтФВтФВтФВтФФтФФ
+; тФВтФВтФВтФВтФМ @ abstractarray.jl:699 within `checkbounds` @ abstractarray.jl:689
+; тФВтФВтФВтФВтФВтФМ @ abstractarray.jl:757 within `checkindex` @ abstractarray.jl:754
+; тФВтФВтФВтФВтФВтФВтФМ @ int.jl:86 within `-`
+	lea	rcx, [r13 - 2]
+; тФВтФВтФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВтФВтФВтФМ @ int.jl:519 within `<`
+	cmp	rcx, rsi
+; тФВтФВтФВтФВтФВтФФтФФ
+; тФВтФВтФВтФВтФВ @ abstractarray.jl:699 within `checkbounds`
+	jae	.LBB0_29
+# %bb.6:                                # %L108
+; тФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВ @ array.jl:305 within `_copyto_impl!`
+; тФВтФВтФВтФВтФМ @ range.jl:5 within `Colon`
+; тФВтФВтФВтФВтФВтФМ @ range.jl:415 within `UnitRange`
+	mov	qword ptr [rbp - 136], 2
+	mov	qword ptr [rbp - 128], r13
+	movzx	eax, byte ptr [rbp - 57]        # 1-byte Folded Reload
+	and	byte ptr [rbp - 58], al         # 1-byte Folded Spill
+; тФВтФВтФВтФВтФФтФФ
+; тФВтФВтФВтФВтФМ @ abstractarray.jl:699 within `checkbounds`
+	je	.LBB0_30
+# %bb.7:                                # %L154
+; тФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВ @ array.jl:308 within `_copyto_impl!`
+; тФВтФВтФВтФВтФМ @ genericmemory.jl:125 within `unsafe_copyto!`
+; тФВтФВтФВтФВтФВтФМ @ int.jl:88 within `*`
+	lea	r8, [8*rsi]
+; тФВтФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВтФВтФМ @ cmem.jl:28 within `memmove`
+; тФВтФВтФВтФВтФВтФВтФМ @ essentials.jl:687 within `cconvert`
+; тФВтФВтФВтФВтФВтФВтФВтФМ @ number.jl:7 within `convert`
+; тФВтФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:962 within `UInt64`
+; тФВтФВтФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:932 within `toUInt64`
+; тФВтФВтФВтФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:821 within `check_sign_bit`
+; тФВтФВтФВтФВтФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:806 within `is_top_bit_set`
+	test	r8, r8
+; тФВтФВтФВтФВтФВтФВтФВтФВтФВтФВтФВтФФ
+	js	.LBB0_31
+# %bb.8:                                # %L171
+	mov	rdx, qword ptr [rbp - 104]      # 8-byte Reload
+; тФВтФВтФВтФВтФФтФФтФФтФФтФФтФФтФФ
+; тФВтФВтФВтФВ @ array.jl:306 within `_copyto_impl!`
+; тФВтФВтФВтФВтФМ @ boot.jl:595 within `memoryref`
+	add	rdx, 8
+	movabs	rax, offset memmove
+; тФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВ @ array.jl:308 within `_copyto_impl!`
+; тФВтФВтФВтФВтФМ @ genericmemory.jl:125 within `unsafe_copyto!`
+; тФВтФВтФВтФВтФВтФМ @ cmem.jl:28 within `memmove`
+	mov	rcx, r14
+	call	rax
+.LBB0_9:                                # %L182
+; тФВтФВтФФтФФтФФтФФ
+; тФВтФВ @ array.jl:937 within `getindex`
+; тФВтФВтФМ @ abstractarray.jl:822 within `similar` @ array.jl:377
+; тФВтФВтФВтФМ @ boot.jl:660 within `Array` @ boot.jl:647
+; тФВтФВтФВтФВтФМ @ boot.jl:588 within `GenericMemory`
+	test	rsi, rsi
+	mov	rax, qword ptr [rbp - 120]      # 8-byte Reload
+; тФВтФФтФФтФФтФФ
+; тФВтФМ @ array.jl:901 within `iterate` @ array.jl:901
+	je	.LBB0_18
+# %bb.10:                               # %L215
+; тФВтФФ
+	lea	rcx, [r14 - 8]
+	mov	r8d, 2
+	.p2align	4, 0x90
+.LBB0_11:                               # %L217
+                                        # =>This Loop Header: Depth=1
+                                        #     Child Loop BB0_14 Depth 2
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl within `greatest_common_divisor`
+; тФВтФМ @ array.jl:901 within `iterate`
+	mov	r9, qword ptr [r14]
+; тФВтФФ
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:11 within `greatest_common_divisor`
+; тФВтФМ @ operators.jl:321 within `!=`
+; тФВтФВтФМ @ promotion.jl:637 within `==`
+	test	r9, r9
+; тФВтФФтФФ
+	je	.LBB0_12
+# %bb.13:                               # %L226.lr.ph
+                                        #   in Loop: Header=BB0_11 Depth=1
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:10 within `greatest_common_divisor`
+; тФВтФМ @ int.jl:188 within `abs`
+; тФВтФВтФМ @ int.jl:142 within `flipsign`
+	mov	rdx, r9
+	neg	rdx
+	cmovs	rdx, r9
+	jmp	.LBB0_14
+	.p2align	4, 0x90
+.LBB0_24:                               #   in Loop: Header=BB0_14 Depth=2
+; тФВтФФтФФ
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:12 within `greatest_common_divisor`
+; тФВтФМ @ int.jl:302 within `rem`
+                                        # kill: def $eax killed $eax killed $rax
+	xor	edx, edx
+	div	r9d
+                                        # kill: def $edx killed $edx def $rdx
+.LBB0_26:                               #   in Loop: Header=BB0_14 Depth=2
+	mov	rax, r9
+; тФВтФФ
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:11 within `greatest_common_divisor`
+; тФВтФМ @ operators.jl:321 within `!=`
+; тФВтФВтФМ @ promotion.jl:637 within `==`
+	test	rdx, rdx
+; тФВтФФтФФ
+	je	.LBB0_16
+.LBB0_14:                               # %L226
+                                        #   Parent Loop BB0_11 Depth=1
+                                        # =>  This Inner Loop Header: Depth=2
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:12 within `greatest_common_divisor`
+; тФВтФМ @ int.jl:302 within `rem`
+	cmp	rdx, -1
+	je	.LBB0_15
+# %bb.23:                               # %after_srem
+                                        #   in Loop: Header=BB0_14 Depth=2
+	mov	r9, rdx
+	mov	rdx, rax
+	or	rdx, r9
+	shr	rdx, 32
+	je	.LBB0_24
+# %bb.25:                               #   in Loop: Header=BB0_14 Depth=2
+	cqo
+	idiv	r9
+	jmp	.LBB0_26
+	.p2align	4, 0x90
+.LBB0_12:                               #   in Loop: Header=BB0_11 Depth=1
+	mov	r9, rax
+.LBB0_16:                               # %L228
+                                        #   in Loop: Header=BB0_11 Depth=1
+; тФВтФФ
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:14 within `greatest_common_divisor`
+; тФВтФМ @ array.jl:901 within `iterate`
+; тФВтФВтФМ @ int.jl:519 within `<`
+	cmp	r8, r13
+; тФВтФВтФФ
+	jne	.LBB0_32
+	jmp	.LBB0_17
+	.p2align	4, 0x90
+.LBB0_15:                               #   in Loop: Header=BB0_11 Depth=1
+	mov	r9, -1
+; тФВтФВтФМ @ int.jl:519 within `<`
+	cmp	r8, r13
+; тФВтФВтФФ
+	je	.LBB0_17
+.LBB0_32:                               # %L257
+                                        #   in Loop: Header=BB0_11 Depth=1
+; тФВтФВтФМ @ essentials.jl:920 within `getindex`
+	lea	r14, [rcx + 8*r8]
+; тФВтФВтФФ
+; тФВтФВтФМ @ int.jl:87 within `+`
+	inc	r8
+	mov	rax, r9
+	jmp	.LBB0_11
+.LBB0_17:
+	mov	rax, r9
+.LBB0_18:                               # %L263
+	mov	rcx, qword ptr [rbp - 88]
+	mov	rdx, qword ptr [rbp - 112]      # 8-byte Reload
+	mov	qword ptr [rdx], rcx
+; тФВтФФтФФ
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:16 within `greatest_common_divisor`
+	add	rsp, 152
+	pop	rbx
+	pop	rdi
+	pop	rsi
+	pop	r12
+	pop	r13
+	pop	r14
+	pop	r15
+	pop	rbp
+	ret
+.LBB0_27:                               # %L6
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:6 within `greatest_common_divisor`
+	movabs	rcx, offset ".Ljl_global#518.jit"
+	movabs	rax, offset j_ArgumentError_517
+	mov	rsi, r8
+	call	rax
+	mov	rdi, rax
+	mov	qword ptr [rbp - 80], rax
+	mov	rcx, qword ptr [rsi + 16]
+	movabs	rsi, 140734324916928
+	add	rsi, 85534304
+	movabs	rax, offset ijl_gc_small_alloc
+	mov	edx, 360
+	mov	r8d, 16
+	mov	r9, rsi
+	call	rax
+	mov	qword ptr [rax - 8], rsi
+	mov	qword ptr [rax], rdi
+	mov	qword ptr [rbp - 80], 0
+	movabs	rdx, offset ijl_throw
+	mov	rcx, rax
+	call	rdx
+.LBB0_28:                               # %L58
+; тФВ @ C:\Users\meowflyx\Desktop\working on bs\WKITU_CEaIS_Studying\pratice_2\task1.jl:9 within `greatest_common_divisor`
+; тФВтФМ @ array.jl:935 within `getindex`
+; тФВтФВтФМ @ abstractarray.jl:699 within `checkbounds`
+	movabs	rax, offset j_throw_boundserror_527
+	lea	rdx, [rbp - 168]
+	mov	rcx, rdi
+	call	rax
+.LBB0_33:                               # %fail
+; тФВтФВтФФ
+; тФВтФВ @ array.jl:937 within `getindex`
+; тФВтФВтФМ @ abstractarray.jl:822 within `similar` @ array.jl:377
+; тФВтФВтФВтФМ @ boot.jl:660 within `Array` @ boot.jl:647
+; тФВтФВтФВтФВтФМ @ boot.jl:588 within `GenericMemory`
+	movabs	rcx, offset ".L_j_str_invalid GenericMemory siz...#2"
+	movabs	rax, offset jl_argument_error
+	call	rax
+.LBB0_29:                               # %L103
+	mov	qword ptr [rbp - 72], 0
+	mov	qword ptr [rbp - 80], rax
+; тФВтФВтФФтФФтФФ
+; тФВтФВ @ array.jl:939 within `getindex`
+; тФВтФВтФМ @ array.jl:299 within `copyto!`
+; тФВтФВтФВтФМ @ array.jl:304 within `_copyto_impl!`
+; тФВтФВтФВтФВтФМ @ abstractarray.jl:699 within `checkbounds`
+	movabs	r8, offset j_throw_boundserror_527
+	lea	rdx, [rbp - 152]
+	mov	rcx, rax
+	call	r8
+.LBB0_30:                               # %L136
+	vxorps	xmm0, xmm0, xmm0
+	vmovaps	xmmword ptr [rbp - 80], xmm0
+; тФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВ @ array.jl:305 within `_copyto_impl!`
+; тФВтФВтФВтФВтФМ @ abstractarray.jl:699 within `checkbounds`
+	movabs	rax, offset j_throw_boundserror_527
+	lea	rdx, [rbp - 136]
+	mov	rcx, rdi
+	call	rax
+.LBB0_31:                               # %L163
+; тФВтФВтФВтФВтФФ
+; тФВтФВтФВтФВ @ array.jl:308 within `_copyto_impl!`
+; тФВтФВтФВтФВтФМ @ genericmemory.jl:125 within `unsafe_copyto!`
+; тФВтФВтФВтФВтФВтФМ @ cmem.jl:28 within `memmove`
+; тФВтФВтФВтФВтФВтФВтФМ @ essentials.jl:687 within `cconvert`
+; тФВтФВтФВтФВтФВтФВтФВтФМ @ number.jl:7 within `convert`
+; тФВтФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:962 within `UInt64`
+; тФВтФВтФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:932 within `toUInt64`
+; тФВтФВтФВтФВтФВтФВтФВтФВтФВтФВтФМ @ boot.jl:821 within `check_sign_bit`
+	movabs	rax, offset jl_small_typeof
+	mov	rdx, qword ptr [rax + 320]
+	movabs	rcx, offset ".Ljl_sym#convert#526.jit"
+	movabs	rax, offset j_throw_inexacterror_525
+	call	rax
+.Lfunc_end0:
+	.size	julia_greatest_common_divisor_515, .Lfunc_end0-julia_greatest_common_divisor_515
+	.cfi_endproc
+; тФФтФФтФФтФФтФФтФФтФФтФФтФФтФФтФФ
+                                        # -- End function
+	.type	".L_j_str_invalid GenericMemory siz...#2",@object # @"_j_str_invalid GenericMemory siz...#2"
+	.section	.rodata.str1.1,"aMSl",@progbits,1
+".L_j_str_invalid GenericMemory siz...#2":
+	.asciz	"invalid GenericMemory size: the number of elements is either negative or too large for system address width"
+	.size	".L_j_str_invalid GenericMemory siz...#2", 108
+
+	.type	".L_j_const#3",@object          # @"_j_const#3"
+	.section	.rodata.cst8,"aM",@progbits,8
+	.p2align	3, 0x0
+".L_j_const#3":
+	.quad	1                               # 0x1
+	.size	".L_j_const#3", 8
+
+.set ".Ljl_sym#convert#526.jit", 2306938302736
+	.size	".Ljl_sym#convert#526.jit", 8
+.set ".Ljl_global#518.jit", 2307008747408
+	.size	".Ljl_global#518.jit", 8
+.set ".L+Core.Array#522.jit", 140734324916928
+	.size	".L+Core.Array#522.jit", 8
+.set ".Ljl_global#520.jit", 140734369031616
+	.size	".Ljl_global#520.jit", 8
+.set ".L+Core.GenericMemory#521.jit", 140734382236944
+	.size	".L+Core.GenericMemory#521.jit", 8
+.set ".L+Core.ArgumentError#519.jit", 140734410451232
+	.size	".L+Core.ArgumentError#519.jit", 8
+	.section	".note.GNU-stack","",@progbits
