@@ -21,3 +21,8 @@ pip install -r requirements
 и прочее...
 
 Важно: Работы Дарьи находятся в другой ветке. Туда я не лезу. Она не лезет сюда. Надеюсь.
+Документы, над которыми ведется основная работа (ссылки могут быть не актуальными!):
+
+- ИКТ: https://drive.google.com/drive/folders/1zRhEEXU9P8BnV6l8dxu9iPLugpcOBaEG?hl=ru
+- ЯТП: https://drive.google.com/drive/folders/1Z1nb9NIw8PB1yqUPrQJegucAoMHO7qlT?hl=ru
+- АИП: https://drive.google.com/drive/folders/1utKjS1ki-_dNInpT7-rGoYSq17bZLFtE?hl=ru
