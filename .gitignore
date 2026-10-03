@@ -1,2 +1,13 @@
 .env
 .venv
+*.class
+bin/
+out/
+target/
+.settings/
+.classpath
+.project
+**/oracleJdk*
+**/jdk*
+*.dll
+*.exe
