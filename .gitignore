@@ -3,3 +3,5 @@
 venv
 .vscode
 .~lock.*
+# черновики, подсказки от ИИ и прочее это defense.md. оно не нужно.
+defense.md
