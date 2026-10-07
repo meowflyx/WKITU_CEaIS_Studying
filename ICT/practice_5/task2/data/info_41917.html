@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><title>
+	IRIDIUM 106 - Satellite Information
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="description" content="Satellite predictions and other astronomical data customised for your location." /><link href="css/ha.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" /><link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/standard.min.js"></script>
+	<script type="text/javascript">
+		function updateLocalTime(utc) {
+			var localdiff = parseInt($('#utcOffset').val());
+			var local_now = new Date(utc.getTime() + localdiff);
+			$('#spanTime').text(formatTime(local_now));
+		}
+
+		$(function () {
+			onClockTick = updateLocalTime;
+			startClock();
+		});
+	</script>
+	
+	</head>
+<body>
+	<form name="aspnetForm" method="post" action="./satinfo.aspx?satid=41917" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AE24612F" />
+	<input type="hidden" name="utcOffset" id="utcOffset" value="0" />
+	<table border="0" style="margin-left: auto; margin-right: auto; border-style: none">
+		<tr>
+			<td>
+				<a id="ctl00_hyperlinkLogo" href="./?lat=0&amp;lng=0&amp;loc=Unspecified&amp;alt=0&amp;tz=UCT&amp;cul=en" style="display:inline-block;"><img src="//heavens-above.com/images/LogoNew.png" alt="" border="0" /></a>
+			</td>
+			<td>
+				
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="5479771053"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				
+			</td>
+			<td>
+				<table class="userTable">
+					<tr>
+						<td>
+							User:
+						</td>
+						<td>
+							anonymous&nbsp;&nbsp;&nbsp;<a href="/login.aspx">Login</a>
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Location:
+						</td>
+						<td>
+							<a id="ctl00_linkObservationSite" href="SelectLocation.aspx?lat=0&amp;lng=0&amp;loc=Unspecified&amp;alt=0&amp;tz=UCT&amp;cul=en">Unspecified</a>
+							
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td colspan="2" align="center">
+							(<a id="ctl00_linkLatLong" href="SelectLocation.aspx?lat=0&amp;lng=0&amp;loc=Unspecified&amp;alt=0&amp;tz=UCT&amp;cul=en">0.0000°N, 0.0000°E</a>)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Time:
+						</td>
+						<td>
+							<span id="spanTime">
+								18:08:00</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							(UTC<span id="ctl00_lblTZ">+00:00</span>)
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Language:
+						</td>
+						<td>
+							<select name="ctl00$ddlCulture" id="ctl00_ddlCulture">
+	<option value="ar">العربية</option>
+	<option value="ca">Catal&#224;</option>
+	<option value="cs">Čeština</option>
+	<option value="da">Dansk</option>
+	<option value="de">Deutsch</option>
+	<option value="el">Ελληνικά</option>
+	<option selected="selected" value="en">English</option>
+	<option value="eo">Esperanto</option>
+	<option value="es">Espa&#241;ol</option>
+	<option value="eu">Euskara</option>
+	<option value="fi">Suomi</option>
+	<option value="fr">Fran&#231;ais</option>
+	<option value="gl">Galego</option>
+	<option value="he">עברית</option>
+	<option value="hr">Hrvatski</option>
+	<option value="hu">Magyar</option>
+	<option value="it">Italiano</option>
+	<option value="ja">日本語</option>
+	<option value="lt">Lietuvių</option>
+	<option value="nl">Nederlands</option>
+	<option value="pl">Polski</option>
+	<option value="pt">Portugu&#234;s brasileiro</option>
+	<option value="pt-PT">Portugu&#234;s de Portugal</option>
+	<option value="ro">Rom&#226;nă</option>
+	<option value="ru">Русский</option>
+	<option value="sk">Slovenčina</option>
+	<option value="sl">Slovenščina</option>
+	<option value="sv">Svenska</option>
+	<option value="ta">தமிழ்</option>
+	<option value="th">ไทย</option>
+	<option value="tr">T&#252;rk&#231;e</option>
+	<option value="uk">Українська</option>
+	<option value="zh">简体中文</option>
+	<option value="zh-CHT">繁體中文</option>
+
+</select>
+						</td>
+					</tr>
+					
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<hr />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top">
+				<table width="100%">
+					<tr>
+						<td align="left">
+							<span id="ctl00_lblTitle" class="pagehead">IRIDIUM 106 - Satellite Information</span>
+						</td>
+						<td align="right" class="navbar">
+							
+							<span id="ctl00_lblNavBar"><a href="/?lat=0&lng=0&loc=Unspecified&alt=0&tz=UCT&cul=en" title="Go to home page">Home</a> | <a href="/PassSummary.aspx?satid=41917&lat=0&lng=0&loc=Unspecified&alt=0&tz=UCT&cul=en" title="Show visible passes">Passes</a> | <a href="/orbit.aspx?satid=41917&lat=0&lng=0&loc=Unspecified&alt=0&tz=UCT&cul=en" title="Show orbit of this satellite">Orbit</a> | <a href="/CloseEncounters.aspx?satid=41917&lat=0&lng=0&loc=Unspecified&alt=0&tz=UCT&cul=en" title="Show upcoming close encounters with other orbiting objects">Close encounters</a></span>
+						</td>
+					</tr>
+				</table>
+				<p />
+				
+    <table>
+		<tr>
+			<td valign="top">
+	<div style="width:750px">
+				<strong>
+					Designation</strong>
+				<table>
+					<tr>
+						<td>
+							Spacetrack catalog number
+						</td>
+						<td>
+							<span id="ctl00_cph1_lblSatID">41917</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							COSPAR ID
+						</td>
+						<td>
+							<span id="ctl00_cph1_lblIntDesig">2017-003-A  </span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Name in Spacetrack catalog
+						</td>
+						<td>
+							<span id="ctl00_cph1_lblOIGName">IRIDIUM 106</span>
+						</td>
+					</tr>
+					<span id="ctl00_cph1_lblAlternateNames"></span>
+				</table>
+				<p />
+				
+				<strong>
+					Satellite Details</strong>
+				<table>
+					<tr>
+						<td>
+							Orbit
+						</td>
+						<td>
+							<span id="ctl00_cph1_lblOrbit">776 x 779 km, 86.4°</span>
+						</td>
+					</tr>
+					<span id="ctl00_cph1_lblCategory"><tr><td>Category </td><td>unknown </td></tr></span>
+					<span id="ctl00_cph1_lblCountry"><tr><td>Country/organisation of origin </td><td>United States</td></tr></span>
+					<span id="ctl00_cph1_lblMass"></span>
+					<span id="ctl00_cph1_lblDimensions"></span>
+					<span id="ctl00_cph1_lblBrightness"><tr><td>Intrinsic brightness (Magnitude) </td><td>5.0 (at 1000km distance, 50% illuminated)</td></tr><tr><td>Maximum brightness (Magnitude)</td><td>3.9 (at perigee, 100% illuminated)</td></tr></span>
+				</table>
+				<p />
+				<strong>
+					Launch</strong>
+				<table>
+					<tr>
+						<td>
+							Date
+							(UTC)
+						</td>
+						<td>
+							<span id="ctl00_cph1_lblLaunchDate">14 January 2017 17:54</span>
+						</td>
+					</tr>
+					<span id="ctl00_cph1_lblLaunchSite"></span>
+					<span id="ctl00_cph1_lblLaunchVehicle"><tr><td>Launch vehicle </td><td>Falcon 9</td></tr></span>
+				</table>
+				<span id="ctl00_cph1_lblDescription"></span>
+				
+			</div>
+			</td>
+			<td valign="top" align="center">
+				<table>
+					<tr>
+						<td>
+							
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							
+						</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td>
+							<img id="ctl00_cph1_imgOrbit" src="orbitdisplay.aspx?icon=default&amp;width=250&amp;height=250&amp;mode=n&amp;satid=41917" alt="View from orbit pole" height="250" width="250" border="0" />
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<span id="ctl00_cph1_lblOrbitPictureCaption"></span>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+				&nbsp;
+				<p />
+				<table style="border-top: 1px solid black;">
+					<tr>
+						<td valign="top" style="width: 100px">
+							<a href="https://twitter.com/heavensabovecom?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @heavensabovecom</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<!--<a id="ctl00_linkDonate" title="Make a donation to help with the running costs of Heavens-Above" href="Donate2.aspx"><img title="Make a donation to help with the running costs of Heavens-Above" src="//heavens-above.com/images/btn_donate_SM.gif" alt="" border="0" /></a>-->
+						</td>
+						<td valign="top">
+							<div class="footer">
+								Developed and maintained by <a href="mailto:Chris.Peat@heavens-above.com">Chris Peat</a>, <a href="https://heavens-above.de">Heavens-Above GmbH</a>. Please read the <a href="faq.aspx">FAQ</a> before sending e-mail. <a href="Imprint.aspx">Imprint</a>.
+								</div>
+						</td>
+						<td>
+							<a href="http://www.dlr.de/rb/en/" target="_blank">
+								<img src="//heavens-above.com/images/dlrhost.gif" align="left" border="0" alt="DLR" /></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td rowspan="1" valign="top">
+				<p />
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+					<p />
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display: inline-block; width: 336px; height: 280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+			</td>
+		</tr>
+	</table>
+	</form>
+    <script src="//tags.onscroll.com/608ff96c-526d-43c0-92d3-5faa546bc80e/tag.min.js" async defer></script>
+</body>
+</html>

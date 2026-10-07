@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><title>
+	IRIDIUM 106 - All Passes
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="description" content="Satellite predictions and other astronomical data customised for your location." /><link href="css/ha.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" /><link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/standard.min.js"></script>
+	<script type="text/javascript">
+		function updateLocalTime(utc) {
+			var localdiff = parseInt($('#utcOffset').val());
+			var local_now = new Date(utc.getTime() + localdiff);
+			$('#spanTime').text(formatTime(local_now));
+		}
+
+		$(function () {
+			onClockTick = updateLocalTime;
+			startClock();
+		});
+	</script>
+	
+	</head>
+<body>
+	<form name="aspnetForm" method="post" action="/PassSummary.aspx?satid=41917&amp;lat=51.23&amp;lng=51.39&amp;loc=Uralsk&amp;alt=0&amp;tz=UCT&amp;showall=t&amp;cul=en" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A11B5251" />
+	<input type="hidden" name="utcOffset" id="utcOffset" value="0" />
+	<table border="0" style="margin-left: auto; margin-right: auto; border-style: none">
+		<tr>
+			<td>
+				<a id="ctl00_hyperlinkLogo" href="./?lat=51.23&amp;lng=51.39&amp;loc=Uralsk&amp;alt=0&amp;tz=UCT&amp;cul=en" style="display:inline-block;"><img src="//heavens-above.com/images/LogoNew.png" alt="" border="0" /></a>
+			</td>
+			<td>
+				
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="5479771053"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				
+			</td>
+			<td>
+				<table class="userTable">
+					<tr>
+						<td>
+							User:
+						</td>
+						<td>
+							anonymous&nbsp;&nbsp;&nbsp;<a href="/login.aspx">Login</a>
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Location:
+						</td>
+						<td>
+							<a id="ctl00_linkObservationSite" href="SelectLocation.aspx?lat=51.23&amp;lng=51.39&amp;loc=Uralsk&amp;alt=0&amp;tz=UCT&amp;cul=en">Uralsk</a>
+							
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td colspan="2" align="center">
+							(<a id="ctl00_linkLatLong" href="SelectLocation.aspx?lat=51.23&amp;lng=51.39&amp;loc=Uralsk&amp;alt=0&amp;tz=UCT&amp;cul=en">51.2300°N, 51.3900°E</a>)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Time:
+						</td>
+						<td>
+							<span id="spanTime">
+								18:06:35</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							(UTC<span id="ctl00_lblTZ">+00:00</span>)
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Language:
+						</td>
+						<td>
+							<select name="ctl00$ddlCulture" id="ctl00_ddlCulture">
+	<option value="ar">العربية</option>
+	<option value="ca">Catal&#224;</option>
+	<option value="cs">Čeština</option>
+	<option value="da">Dansk</option>
+	<option value="de">Deutsch</option>
+	<option value="el">Ελληνικά</option>
+	<option selected="selected" value="en">English</option>
+	<option value="eo">Esperanto</option>
+	<option value="es">Espa&#241;ol</option>
+	<option value="eu">Euskara</option>
+	<option value="fi">Suomi</option>
+	<option value="fr">Fran&#231;ais</option>
+	<option value="gl">Galego</option>
+	<option value="he">עברית</option>
+	<option value="hr">Hrvatski</option>
+	<option value="hu">Magyar</option>
+	<option value="it">Italiano</option>
+	<option value="ja">日本語</option>
+	<option value="lt">Lietuvių</option>
+	<option value="nl">Nederlands</option>
+	<option value="pl">Polski</option>
+	<option value="pt">Portugu&#234;s brasileiro</option>
+	<option value="pt-PT">Portugu&#234;s de Portugal</option>
+	<option value="ro">Rom&#226;nă</option>
+	<option value="ru">Русский</option>
+	<option value="sk">Slovenčina</option>
+	<option value="sl">Slovenščina</option>
+	<option value="sv">Svenska</option>
+	<option value="ta">தமிழ்</option>
+	<option value="th">ไทย</option>
+	<option value="tr">T&#252;rk&#231;e</option>
+	<option value="uk">Українська</option>
+	<option value="zh">简体中文</option>
+	<option value="zh-CHT">繁體中文</option>
+
+</select>
+						</td>
+					</tr>
+					
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<hr />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top">
+				<table width="100%">
+					<tr>
+						<td align="left">
+							<span id="ctl00_lblTitle" class="pagehead">IRIDIUM 106 - All Passes</span>
+						</td>
+						<td align="right" class="navbar">
+							
+							<span id="ctl00_lblNavBar"><a href="/?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en" title="Go to home page">Home</a> | <a href="/satinfo.aspx?satid=41917&lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en" title="Show information about this satellite">Info.</a> | <a href="/orbit.aspx?satid=41917&lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en" title="Show orbit of this satellite">Orbit</a> | <a href="/CloseEncounters.aspx?satid=41917&lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en" title="Show upcoming close encounters with other orbiting objects">Close encounters</a></span>
+						</td>
+					</tr>
+				</table>
+				<p />
+				
+	<input type="hidden" name="ctl00$cph1$hidStartUtc" id="ctl00_cph1_hidStartUtc" value="639269931954332054" />
+	<table>
+		<tr>
+			<td class="userinfo">
+				Search period start:
+			</td>
+			<td class="userinfo">
+				<span id="ctl00_cph1_lblSearchStart">07 October 2026 00:00</span>
+			</td>
+			<td class="userinfo" rowspan="2">
+				<input type="submit" name="ctl00$cph1$btnPrev" value="&lt;" id="ctl00_cph1_btnPrev" title="show previous search period" />
+				<input type="submit" name="ctl00$cph1$btnNext" value=">" id="ctl00_cph1_btnNext" title="show next search period" />
+			</td>
+		</tr>
+		<tr>
+			<td class="userinfo">
+				Search period end:
+			</td>
+			<td class="userinfo">
+				<span id="ctl00_cph1_lblSearchEnd">17 October 2026 00:00</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="userinfo">
+				<a id="ctl00_cph1_hlOrbit" title="Show orbit of this satellite" href="orbit.aspx?satid=41917&amp;lat=51.23&amp;lng=51.39&amp;loc=Uralsk&amp;alt=0&amp;tz=UCT&amp;cul=en">Orbit:</a>
+			</td>
+			<td class="userinfo" colspan="2">
+				<span id="ctl00_cph1_lblOrbit">776 x 779 km, 86.4° (Epoch: 7 October)</span>
+			</td>
+		</tr>
+	</table>
+	<p>
+		Passes to include:
+		<input id="ctl00_cph1_radioVisible" type="radio" name="ctl00$cph1$visible" value="radioVisible" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$cph1$radioVisible\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_cph1_radioVisible">visible only</label>
+		<input id="ctl00_cph1_radioAll" type="radio" name="ctl00$cph1$visible" value="radioAll" checked="checked" /><label for="ctl00_cph1_radioAll">all</label>
+	</p>
+	<p><span id="ctl00_cph1_lblMessage" class="userinfo">Click on the date to see the ground track during the pass.</span></p>
+	<p />
+	
+	<table class="standardTable">
+	<thead>
+		<tr>
+			<td align="center" rowspan="2" valign="middle">
+				Date
+			</td>
+			<td align="center">
+				Brightness
+			</td>
+			<td align="center" valign="top" colspan="3">
+				Start
+			</td>
+			<td align="center" colspan="3">
+				Highest point
+			</td>
+			<td align="center" colspan="3">
+				End
+			</td>
+			<td align="center" rowspan="2" valign="middle">
+				Pass type
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				(mag)
+			</td>
+			<td align="center">
+				Time
+			</td>
+			<td>
+				Alt.
+			</td>
+			<td>
+				Az.
+			</td>
+			<td align="center">
+				Time
+			</td>
+			<td>
+				Alt.
+			</td>
+			<td>
+				Az.
+			</td>
+			<td align="center">
+				Time
+			</td>
+			<td>
+				Alt.
+			</td>
+			<td>
+				Az.
+			</td>
+		</tr>
+		</thead>
+		<tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61320.0148826649&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61320.0148826649&type=A" title="Show the ground track during this pass">7 Oct</a></td><td align="center">-</td><td>00:18:28</td><td align="center">10°</td><td>W</td><td>00:21:25</td><td align="center">15°</td><td>WNW</td><td>00:24:23</td><td align="center">10°</td><td>NNW</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61320.3776936643&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61320.3776936643&type=A" title="Show the ground track during this pass">7 Oct</a></td><td align="center">-</td><td>08:59:08</td><td align="center">10°</td><td>N</td><td>09:03:52</td><td align="center">34°</td><td>ENE</td><td>09:08:35</td><td align="center">10°</td><td>SE</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61320.4476872749&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61320.4476872749&type=A" title="Show the ground track during this pass">7 Oct</a></td><td align="center">-</td><td>10:39:50</td><td align="center">10°</td><td>NNW</td><td>10:44:40</td><td align="center">39°</td><td>W</td><td>10:49:28</td><td align="center">10°</td><td>SSW</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61320.9210838399&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61320.9210838399&type=A" title="Show the ground track during this pass">7 Oct</a></td><td align="center">-</td><td>22:01:15</td><td align="center">10°</td><td>SSE</td><td>22:06:21</td><td align="center">57°</td><td>E</td><td>22:11:29</td><td align="center">10°</td><td>N</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61320.9913037846&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61320.9913037846&type=A" title="Show the ground track during this pass">7 Oct</a></td><td align="center">-</td><td>23:43:17</td><td align="center">10°</td><td>SW</td><td>23:47:28</td><td align="center">24°</td><td>WNW</td><td>23:51:42</td><td align="center">10°</td><td>NNW</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61321.3541860063&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61321.3541860063&type=A" title="Show the ground track during this pass">8 Oct</a></td><td align="center">-</td><td>08:26:04</td><td align="center">10°</td><td>NNE</td><td>08:30:01</td><td align="center">21°</td><td>ENE</td><td>08:33:58</td><td align="center">10°</td><td>ESE</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61321.4244922284&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61321.4244922284&type=A" title="Show the ground track during this pass">8 Oct</a></td><td align="center">-</td><td>10:06:05</td><td align="center">10°</td><td>N</td><td>10:11:16</td><td align="center">65°</td><td>W</td><td>10:16:25</td><td align="center">10°</td><td>S</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61321.4937045488&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61321.4937045488&type=A" title="Show the ground track during this pass">8 Oct</a></td><td align="center">-</td><td>11:49:50</td><td align="center">10°</td><td>WNW</td><td>11:50:56</td><td align="center">11°</td><td>WNW</td><td>11:52:01</td><td align="center">10°</td><td>W</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61321.8979122893&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61321.8979122893&type=A" title="Show the ground track during this pass">8 Oct</a></td><td align="center">-</td><td>21:28:19</td><td align="center">10°</td><td>SSE</td><td>21:32:59</td><td align="center">34°</td><td>E</td><td>21:37:40</td><td align="center">10°</td><td>NNE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61321.9678250792&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61321.9678250792&type=A" title="Show the ground track during this pass">8 Oct</a></td><td align="center">-</td><td>23:08:49</td><td align="center">10°</td><td>SW</td><td>23:13:40</td><td align="center">38°</td><td>WNW</td><td>23:18:33</td><td align="center">10°</td><td>N</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61322.3305901239&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61322.3305901239&type=A" title="Show the ground track during this pass">9 Oct</a></td><td align="center">-</td><td>07:53:34</td><td align="center">10°</td><td>NE</td><td>07:56:02</td><td align="center">13°</td><td>ENE</td><td>07:58:31</td><td align="center">10°</td><td>E</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61322.4012151675&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61322.4012151675&type=A" title="Show the ground track during this pass">9 Oct</a></td><td align="center">-</td><td>09:32:29</td><td align="center">10°</td><td>N</td><td>09:37:44</td><td align="center">76°</td><td>E</td><td>09:42:57</td><td align="center">10°</td><td>S</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61322.4707251064&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61322.4707251064&type=A" title="Show the ground track during this pass">9 Oct</a></td><td align="center">-</td><td>11:14:25</td><td align="center">10°</td><td>NW</td><td>11:17:50</td><td align="center">18°</td><td>WNW</td><td>11:21:15</td><td align="center">10°</td><td>WSW</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61322.8748133462&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61322.8748133462&type=A" title="Show the ground track during this pass">9 Oct</a></td><td align="center">-</td><td>20:55:53</td><td align="center">10°</td><td>SE</td><td>20:59:43</td><td align="center">21°</td><td>ENE</td><td>21:03:35</td><td align="center">10°</td><td>NNE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61322.9444316018&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61322.9444316018&type=A" title="Show the ground track during this pass">9 Oct</a></td><td align="center">-</td><td>22:34:48</td><td align="center">10°</td><td>SSW</td><td>22:39:58</td><td align="center">64°</td><td>W</td><td>22:45:11</td><td align="center">10°</td><td>N</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.0151735771&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.0151735771&type=A" title="Show the ground track during this pass">10 Oct</a></td><td align="center">-</td><td>00:20:23</td><td align="center">10°</td><td>WNW</td><td>00:21:50</td><td align="center">11°</td><td>WNW</td><td>00:23:19</td><td align="center">10°</td><td>NW</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.3778570129&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.3778570129&type=A" title="Show the ground track during this pass">10 Oct</a></td><td align="center">-</td><td>08:59:04</td><td align="center">10°</td><td>N</td><td>09:04:06</td><td align="center">46°</td><td>E</td><td>09:09:05</td><td align="center">10°</td><td>SSE</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.4476618676&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.4476618676&type=A" title="Show the ground track during this pass">10 Oct</a></td><td align="center">-</td><td>10:40:11</td><td align="center">10°</td><td>NNW</td><td>10:44:37</td><td align="center">29°</td><td>W</td><td>10:49:04</td><td align="center">10°</td><td>SW</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.8518088997&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.8518088997&type=A" title="Show the ground track during this pass">10 Oct</a></td><td align="center">-</td><td>20:24:19</td><td align="center">10°</td><td>E</td><td>20:26:36</td><td align="center">13°</td><td>ENE</td><td>20:28:52</td><td align="center">10°</td><td>NE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.9211255003&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.9211255003&type=A" title="Show the ground track during this pass">10 Oct</a></td><td align="center">-</td><td>22:01:12</td><td align="center">10°</td><td>S</td><td>22:06:25</td><td align="center">78°</td><td>E</td><td>22:11:40</td><td align="center">10°</td><td>N</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.9915402065&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61323.9915402065&type=A" title="Show the ground track during this pass">10 Oct</a></td><td align="center">-</td><td>23:44:17</td><td align="center">10°</td><td>WSW</td><td>23:47:49</td><td align="center">18°</td><td>WNW</td><td>23:51:22</td><td align="center">10°</td><td>NNW</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61324.3544023379&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61324.3544023379&type=A" title="Show the ground track during this pass">11 Oct</a></td><td align="center">-</td><td>08:25:50</td><td align="center">10°</td><td>NNE</td><td>08:30:20</td><td align="center">28°</td><td>ENE</td><td>08:34:48</td><td align="center">10°</td><td>SE</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61324.4245159258&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61324.4245159258&type=A" title="Show the ground track during this pass">11 Oct</a></td><td align="center">-</td><td>10:06:17</td><td align="center">10°</td><td>NNW</td><td>10:11:18</td><td align="center">48°</td><td>W</td><td>10:16:17</td><td align="center">10°</td><td>SSW</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61324.8978968101&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61324.8978968101&type=A" title="Show the ground track during this pass">11 Oct</a></td><td align="center">-</td><td>21:28:00</td><td align="center">10°</td><td>SSE</td><td>21:32:58</td><td align="center">47°</td><td>E</td><td>21:37:58</td><td align="center">10°</td><td>NNE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61324.9680009828&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61324.9680009828&type=A" title="Show the ground track during this pass">11 Oct</a></td><td align="center">-</td><td>23:09:25</td><td align="center">10°</td><td>SW</td><td>23:13:55</td><td align="center">29°</td><td>WNW</td><td>23:18:26</td><td align="center">10°</td><td>NNW</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61325.3308560779&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61325.3308560779&type=A" title="Show the ground track during this pass">12 Oct</a></td><td align="center">-</td><td>07:52:56</td><td align="center">10°</td><td>NNE</td><td>07:56:25</td><td align="center">18°</td><td>ENE</td><td>07:59:55</td><td align="center">10°</td><td>ESE</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61325.4012883279&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61325.4012883279&type=A" title="Show the ground track during this pass">12 Oct</a></td><td align="center">-</td><td>09:32:36</td><td align="center">10°</td><td>N</td><td>09:37:51</td><td align="center">80°</td><td>W</td><td>09:43:03</td><td align="center">10°</td><td>S</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61325.4706194488&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61325.4706194488&type=A" title="Show the ground track during this pass">12 Oct</a></td><td align="center">-</td><td>11:15:19</td><td align="center">10°</td><td>NW</td><td>11:17:41</td><td align="center">13°</td><td>WNW</td><td>11:20:04</td><td align="center">10°</td><td>W</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61325.8747598956&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61325.8747598956&type=A" title="Show the ground track during this pass">12 Oct</a></td><td align="center">-</td><td>20:55:15</td><td align="center">10°</td><td>SE</td><td>20:59:39</td><td align="center">28°</td><td>E</td><td>21:04:04</td><td align="center">10°</td><td>NNE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61325.9445547122&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61325.9445547122&type=A" title="Show the ground track during this pass">12 Oct</a></td><td align="center">-</td><td>22:35:08</td><td align="center">10°</td><td>SSW</td><td>22:40:09</td><td align="center">47°</td><td>W</td><td>22:45:12</td><td align="center">10°</td><td>N</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.3072245852&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.3072245852&type=A" title="Show the ground track during this pass">13 Oct</a></td><td align="center">-</td><td>07:21:06</td><td align="center">10°</td><td>NE</td><td>07:22:24</td><td align="center">11°</td><td>ENE</td><td>07:23:40</td><td align="center">10°</td><td>ENE</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.3779772947&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.3779772947&type=A" title="Show the ground track during this pass">13 Oct</a></td><td align="center">-</td><td>08:59:04</td><td align="center">10°</td><td>N</td><td>09:04:17</td><td align="center">62°</td><td>E</td><td>09:09:27</td><td align="center">10°</td><td>SSE</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.4476069034&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.4476069034&type=A" title="Show the ground track during this pass">13 Oct</a></td><td align="center">-</td><td>10:40:38</td><td align="center">10°</td><td>NNW</td><td>10:44:33</td><td align="center">22°</td><td>WNW</td><td>10:48:26</td><td align="center">10°</td><td>SW</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.851699816&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.851699816&type=A" title="Show the ground track during this pass">13 Oct</a></td><td align="center">-</td><td>20:23:05</td><td align="center">10°</td><td>ESE</td><td>20:26:26</td><td align="center">18°</td><td>ENE</td><td>20:29:48</td><td align="center">10°</td><td>NE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.9211961613&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.9211961613&type=A" title="Show the ground track during this pass">13 Oct</a></td><td align="center">-</td><td>22:01:18</td><td align="center">10°</td><td>S</td><td>22:06:31</td><td align="center">78°</td><td>W</td><td>22:11:46</td><td align="center">10°</td><td>N</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.991807597&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61326.991807597&type=A" title="Show the ground track during this pass">13 Oct</a></td><td align="center">-</td><td>23:45:38</td><td align="center">10°</td><td>W</td><td>23:48:12</td><td align="center">14°</td><td>WNW</td><td>23:50:46</td><td align="center">10°</td><td>NW</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61327.3545793359&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61327.3545793359&type=A" title="Show the ground track during this pass">14 Oct</a></td><td align="center">-</td><td>08:25:43</td><td align="center">10°</td><td>N</td><td>08:30:35</td><td align="center">37°</td><td>ENE</td><td>08:35:25</td><td align="center">10°</td><td>SE</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61327.424512998&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61327.424512998&type=A" title="Show the ground track during this pass">14 Oct</a></td><td align="center">-</td><td>10:06:34</td><td align="center">10°</td><td>NNW</td><td>10:11:17</td><td align="center">35°</td><td>W</td><td>10:15:59</td><td align="center">10°</td><td>SSW</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61327.828721927&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61327.828721927&type=A" title="Show the ground track during this pass">14 Oct</a></td><td align="center">-</td><td>19:52:33</td><td align="center">10°</td><td>ENE</td><td>19:53:21</td><td align="center">10°</td><td>ENE</td><td>19:54:09</td><td align="center">10°</td><td>ENE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61327.8979210221&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61327.8979210221&type=A" title="Show the ground track during this pass">14 Oct</a></td><td align="center">-</td><td>21:27:51</td><td align="center">10°</td><td>S</td><td>21:33:00</td><td align="center">64°</td><td>E</td><td>21:38:10</td><td align="center">10°</td><td>N</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61327.9682142965&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61327.9682142965&type=A" title="Show the ground track during this pass">14 Oct</a></td><td align="center">-</td><td>23:10:14</td><td align="center">10°</td><td>WSW</td><td>23:14:13</td><td align="center">22°</td><td>WNW</td><td>23:18:14</td><td align="center">10°</td><td>NNW</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61328.331096177&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61328.331096177&type=A" title="Show the ground track during this pass">15 Oct</a></td><td align="center">-</td><td>07:52:36</td><td align="center">10°</td><td>NNE</td><td>07:56:46</td><td align="center">23°</td><td>ENE</td><td>08:00:55</td><td align="center">10°</td><td>SE</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61328.4013321591&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61328.4013321591&type=A" title="Show the ground track during this pass">15 Oct</a></td><td align="center">-</td><td>09:32:46</td><td align="center">10°</td><td>N</td><td>09:37:55</td><td align="center">59°</td><td>W</td><td>09:43:01</td><td align="center">10°</td><td>SSW</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61328.87473191&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61328.87473191&type=A" title="Show the ground track during this pass">15 Oct</a></td><td align="center">-</td><td>20:54:49</td><td align="center">10°</td><td>SSE</td><td>20:59:36</td><td align="center">38°</td><td>E</td><td>21:04:25</td><td align="center">10°</td><td>NNE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61328.9447080644&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61328.9447080644&type=A" title="Show the ground track during this pass">15 Oct</a></td><td align="center">-</td><td>22:35:38</td><td align="center">10°</td><td>SW</td><td>22:40:22</td><td align="center">35°</td><td>WNW</td><td>22:45:09</td><td align="center">10°</td><td>N</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61329.3075129258&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61329.3075129258&type=A" title="Show the ground track during this pass">16 Oct</a></td><td align="center">-</td><td>07:19:56</td><td align="center">10°</td><td>NNE</td><td>07:22:49</td><td align="center">15°</td><td>ENE</td><td>07:25:41</td><td align="center">10°</td><td>E</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61329.3780697781&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61329.3780697781&type=A" title="Show the ground track during this pass">16 Oct</a></td><td align="center">-</td><td>08:59:09</td><td align="center">10°</td><td>N</td><td>09:04:25</td><td align="center">84°</td><td>E</td><td>09:09:38</td><td align="center">10°</td><td>S</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61329.447514951&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61329.447514951&type=A" title="Show the ground track during this pass">16 Oct</a></td><td align="center">-</td><td>10:41:18</td><td align="center">10°</td><td>NW</td><td>10:44:25</td><td align="center">16°</td><td>WNW</td><td>10:47:32</td><td align="center">10°</td><td>WSW</td><td>daylight</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61329.8516194302&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61329.8516194302&type=A" title="Show the ground track during this pass">16 Oct</a></td><td align="center">-</td><td>20:22:17</td><td align="center">10°</td><td>SE</td><td>20:26:19</td><td align="center">23°</td><td>ENE</td><td>20:30:24</td><td align="center">10°</td><td>NNE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61329.9212985429&type=A'"><td><a href="passdetails.aspx?lat=51.23&lng=51.39&loc=Uralsk&alt=0&tz=UCT&cul=en&satid=41917&mjd=61329.9212985429&type=A" title="Show the ground track during this pass">16 Oct</a></td><td align="center">-</td><td>22:01:32</td><td align="center">10°</td><td>SSW</td><td>22:06:40</td><td align="center">57°</td><td>W</td><td>22:11:50</td><td align="center">10°</td><td>N</td><td>visible</td></tr>
+	</table>
+	
+
+				&nbsp;
+				<p />
+				<table style="border-top: 1px solid black;">
+					<tr>
+						<td valign="top" style="width: 100px">
+							<a href="https://twitter.com/heavensabovecom?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @heavensabovecom</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<!--<a id="ctl00_linkDonate" title="Make a donation to help with the running costs of Heavens-Above" href="Donate2.aspx"><img title="Make a donation to help with the running costs of Heavens-Above" src="//heavens-above.com/images/btn_donate_SM.gif" alt="" border="0" /></a>-->
+						</td>
+						<td valign="top">
+							<div class="footer">
+								Developed and maintained by <a href="mailto:Chris.Peat@heavens-above.com">Chris Peat</a>, <a href="https://heavens-above.de">Heavens-Above GmbH</a>. Please read the <a href="faq.aspx">FAQ</a> before sending e-mail. <a href="Imprint.aspx">Imprint</a>.
+								</div>
+						</td>
+						<td>
+							<a href="http://www.dlr.de/rb/en/" target="_blank">
+								<img src="//heavens-above.com/images/dlrhost.gif" align="left" border="0" alt="DLR" /></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td rowspan="1" valign="top">
+				<p />
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+					<p />
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display: inline-block; width: 336px; height: 280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+			</td>
+		</tr>
+	</table>
+	</form>
+    <script src="//tags.onscroll.com/608ff96c-526d-43c0-92d3-5faa546bc80e/tag.min.js" async defer></script>
+</body>
+</html>

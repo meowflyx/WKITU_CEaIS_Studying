@@ -1,0 +1,113 @@
+{
+  "city": "Уральск",
+  "latitude": 51.23,
+  "longitude": 51.39,
+  "observer_altitude_m": 0,
+  "timezone": "UTC+05:00",
+  "date": "2026-10-08",
+  "minimum_elevation_deg": 10,
+  "satellites": [
+    {
+      "name": "МКС",
+      "norad_id": 25544,
+      "perigee_km": 416,
+      "apogee_km": 425,
+      "revolutions_per_day": 15.48757,
+      "inclination_deg": 51.631,
+      "epoch_utc": "06 October 2026 23:34:32",
+      "passes": [
+        {
+          "start": "2026-10-08T10:13:46+05:00",
+          "peak": "2026-10-08T10:16:35+05:00",
+          "end": "2026-10-08T10:19:24+05:00",
+          "maximum_elevation_deg": 24,
+          "duration_seconds": 338,
+          "type": "daylight"
+        },
+        {
+          "start": "2026-10-08T11:49:40+05:00",
+          "peak": "2026-10-08T11:53:05+05:00",
+          "end": "2026-10-08T11:56:30+05:00",
+          "maximum_elevation_deg": 75,
+          "duration_seconds": 410,
+          "type": "daylight"
+        },
+        {
+          "start": "2026-10-08T13:26:32+05:00",
+          "peak": "2026-10-08T13:29:57+05:00",
+          "end": "2026-10-08T13:33:22+05:00",
+          "maximum_elevation_deg": 84,
+          "duration_seconds": 410,
+          "type": "daylight"
+        },
+        {
+          "start": "2026-10-08T15:03:24+05:00",
+          "peak": "2026-10-08T15:06:42+05:00",
+          "end": "2026-10-08T15:09:58+05:00",
+          "maximum_elevation_deg": 47,
+          "duration_seconds": 394,
+          "type": "daylight"
+        },
+        {
+          "start": "2026-10-08T16:41:30+05:00",
+          "peak": "2026-10-08T16:42:54+05:00",
+          "end": "2026-10-08T16:44:18+05:00",
+          "maximum_elevation_deg": 12,
+          "duration_seconds": 168,
+          "type": "daylight"
+        }
+      ]
+    },
+    {
+      "name": "Iridium 106",
+      "norad_id": 41917,
+      "perigee_km": 776,
+      "apogee_km": 779,
+      "revolutions_per_day": 14.34218681,
+      "inclination_deg": 86.3979,
+      "epoch_utc": "07 October 2026 05:07:26",
+      "passes": [
+        {
+          "start": "2026-10-08T03:01:15+05:00",
+          "peak": "2026-10-08T03:06:21+05:00",
+          "end": "2026-10-08T03:11:29+05:00",
+          "maximum_elevation_deg": 57,
+          "duration_seconds": 614,
+          "type": "visible"
+        },
+        {
+          "start": "2026-10-08T04:43:17+05:00",
+          "peak": "2026-10-08T04:47:28+05:00",
+          "end": "2026-10-08T04:51:42+05:00",
+          "maximum_elevation_deg": 24,
+          "duration_seconds": 505,
+          "type": "visible"
+        },
+        {
+          "start": "2026-10-08T13:26:04+05:00",
+          "peak": "2026-10-08T13:30:01+05:00",
+          "end": "2026-10-08T13:33:58+05:00",
+          "maximum_elevation_deg": 21,
+          "duration_seconds": 474,
+          "type": "daylight"
+        },
+        {
+          "start": "2026-10-08T15:06:05+05:00",
+          "peak": "2026-10-08T15:11:16+05:00",
+          "end": "2026-10-08T15:16:25+05:00",
+          "maximum_elevation_deg": 65,
+          "duration_seconds": 620,
+          "type": "daylight"
+        },
+        {
+          "start": "2026-10-08T16:49:50+05:00",
+          "peak": "2026-10-08T16:50:56+05:00",
+          "end": "2026-10-08T16:52:01+05:00",
+          "maximum_elevation_deg": 11,
+          "duration_seconds": 131,
+          "type": "daylight"
+        }
+      ]
+    }
+  ]
+}

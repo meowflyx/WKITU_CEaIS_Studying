@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><title>
+	ISS - Satellite Information
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="description" content="Satellite predictions and other astronomical data customised for your location." /><link href="css/ha.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" /><link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/standard.min.js"></script>
+	<script type="text/javascript">
+		function updateLocalTime(utc) {
+			var localdiff = parseInt($('#utcOffset').val());
+			var local_now = new Date(utc.getTime() + localdiff);
+			$('#spanTime').text(formatTime(local_now));
+		}
+
+		$(function () {
+			onClockTick = updateLocalTime;
+			startClock();
+		});
+	</script>
+	
+	</head>
+<body>
+	<form name="aspnetForm" method="post" action="./satinfo.aspx?satid=25544" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AE24612F" />
+	<input type="hidden" name="utcOffset" id="utcOffset" value="0" />
+	<table border="0" style="margin-left: auto; margin-right: auto; border-style: none">
+		<tr>
+			<td>
+				<a id="ctl00_hyperlinkLogo" href="./?lat=0&amp;lng=0&amp;loc=Unspecified&amp;alt=0&amp;tz=UCT&amp;cul=en" style="display:inline-block;"><img src="//heavens-above.com/images/LogoNew.png" alt="" border="0" /></a>
+			</td>
+			<td>
+				
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="5479771053"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				
+			</td>
+			<td>
+				<table class="userTable">
+					<tr>
+						<td>
+							User:
+						</td>
+						<td>
+							anonymous&nbsp;&nbsp;&nbsp;<a href="/login.aspx">Login</a>
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Location:
+						</td>
+						<td>
+							<a id="ctl00_linkObservationSite" href="SelectLocation.aspx?lat=0&amp;lng=0&amp;loc=Unspecified&amp;alt=0&amp;tz=UCT&amp;cul=en">Unspecified</a>
+							
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td colspan="2" align="center">
+							(<a id="ctl00_linkLatLong" href="SelectLocation.aspx?lat=0&amp;lng=0&amp;loc=Unspecified&amp;alt=0&amp;tz=UCT&amp;cul=en">0.0000°N, 0.0000°E</a>)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Time:
+						</td>
+						<td>
+							<span id="spanTime">
+								18:08:12</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							(UTC<span id="ctl00_lblTZ">+00:00</span>)
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Language:
+						</td>
+						<td>
+							<select name="ctl00$ddlCulture" id="ctl00_ddlCulture">
+	<option value="ar">العربية</option>
+	<option value="ca">Catal&#224;</option>
+	<option value="cs">Čeština</option>
+	<option value="da">Dansk</option>
+	<option value="de">Deutsch</option>
+	<option value="el">Ελληνικά</option>
+	<option selected="selected" value="en">English</option>
+	<option value="eo">Esperanto</option>
+	<option value="es">Espa&#241;ol</option>
+	<option value="eu">Euskara</option>
+	<option value="fi">Suomi</option>
+	<option value="fr">Fran&#231;ais</option>
+	<option value="gl">Galego</option>
+	<option value="he">עברית</option>
+	<option value="hr">Hrvatski</option>
+	<option value="hu">Magyar</option>
+	<option value="it">Italiano</option>
+	<option value="ja">日本語</option>
+	<option value="lt">Lietuvių</option>
+	<option value="nl">Nederlands</option>
+	<option value="pl">Polski</option>
+	<option value="pt">Portugu&#234;s brasileiro</option>
+	<option value="pt-PT">Portugu&#234;s de Portugal</option>
+	<option value="ro">Rom&#226;nă</option>
+	<option value="ru">Русский</option>
+	<option value="sk">Slovenčina</option>
+	<option value="sl">Slovenščina</option>
+	<option value="sv">Svenska</option>
+	<option value="ta">தமிழ்</option>
+	<option value="th">ไทย</option>
+	<option value="tr">T&#252;rk&#231;e</option>
+	<option value="uk">Українська</option>
+	<option value="zh">简体中文</option>
+	<option value="zh-CHT">繁體中文</option>
+
+</select>
+						</td>
+					</tr>
+					
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<hr />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top">
+				<table width="100%">
+					<tr>
+						<td align="left">
+							<span id="ctl00_lblTitle" class="pagehead">ISS - Satellite Information</span>
+						</td>
+						<td align="right" class="navbar">
+							
+							<span id="ctl00_lblNavBar"><a href="/?lat=0&lng=0&loc=Unspecified&alt=0&tz=UCT&cul=en" title="Go to home page">Home</a> | <a href="/PassSummary.aspx?satid=25544&lat=0&lng=0&loc=Unspecified&alt=0&tz=UCT&cul=en" title="Show visible passes">Passes</a> | <a href="/orbit.aspx?satid=25544&lat=0&lng=0&loc=Unspecified&alt=0&tz=UCT&cul=en" title="Show orbit of this satellite">Orbit</a> | <a href="/CloseEncounters.aspx?satid=25544&lat=0&lng=0&loc=Unspecified&alt=0&tz=UCT&cul=en" title="Show upcoming close encounters with other orbiting objects">Close encounters</a></span>
+						</td>
+					</tr>
+				</table>
+				<p />
+				
+    <table>
+		<tr>
+			<td valign="top">
+	<div style="width:750px">
+				<strong>
+					Designation</strong>
+				<table>
+					<tr>
+						<td>
+							Spacetrack catalog number
+						</td>
+						<td>
+							<span id="ctl00_cph1_lblSatID">25544</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							COSPAR ID
+						</td>
+						<td>
+							<span id="ctl00_cph1_lblIntDesig">1998-067-A  </span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Name in Spacetrack catalog
+						</td>
+						<td>
+							<span id="ctl00_cph1_lblOIGName">ISS (ZARYA)</span>
+						</td>
+					</tr>
+					<span id="ctl00_cph1_lblAlternateNames"></span>
+				</table>
+				<p />
+				
+					<strong>Amateur radio information</strong><br />
+					Downlink: 437.800 MHz;
+Uplink:145.990 MHz ctcss 67 Hz
+					<p />
+				
+				<strong>
+					Satellite Details</strong>
+				<table>
+					<tr>
+						<td>
+							Orbit
+						</td>
+						<td>
+							<span id="ctl00_cph1_lblOrbit">416 x 425 km, 51.6°</span>
+						</td>
+					</tr>
+					<span id="ctl00_cph1_lblCategory"><tr><td>Category </td><td>Space station </td></tr></span>
+					<span id="ctl00_cph1_lblCountry"><tr><td>Country/organisation of origin </td><td>United States, Russia, ESA, Japan, Canada</td></tr></span>
+					<span id="ctl00_cph1_lblMass"><tr><td>Mass </td><td>450,000 kg</td></tr></span>
+					<span id="ctl00_cph1_lblDimensions"><tr><td>Dimensions </td><td>Length 72.8m, width 108.5m</td></tr></span>
+					<span id="ctl00_cph1_lblBrightness"><tr><td>Intrinsic brightness (Magnitude) </td><td>-1.8 (at 1000km distance, 50% illuminated)</td></tr><tr><td>Maximum brightness (Magnitude)</td><td>-5.6 (at perigee, 100% illuminated)</td></tr></span>
+				</table>
+				<p />
+				<strong>
+					Launch</strong>
+				<table>
+					<tr>
+						<td>
+							Date
+							(UTC)
+						</td>
+						<td>
+							<span id="ctl00_cph1_lblLaunchDate">20 November 1998 06:40</span>
+						</td>
+					</tr>
+					<span id="ctl00_cph1_lblLaunchSite"><tr><td valign="top">Launch site</td><td>Baikonur Cosmodrome, <br />Kazakhstan</td></tr></span>
+					<span id="ctl00_cph1_lblLaunchVehicle"><tr><td>Launch vehicle </td><td>Proton-K</td></tr></span>
+				</table>
+				<span id="ctl00_cph1_lblDescription"><p /><strong>Description</strong><br /><table width="600"><tr><td>The International Space Station</td></tr></table></span>
+				
+				<p />
+				<table>
+					<tr>
+						<td valign="top">
+							Links to further information
+						</td>
+						<td>
+							<a href="http://en.wikipedia.org/wiki/International_Space_Station">Wikipedia</a>,<br /><a href="http://spaceflight.nasa.gov">spaceflight.nasa.gov</a>
+						</td>
+					</tr>
+				</table>
+				
+			</div>
+			</td>
+			<td valign="top" align="center">
+				<table>
+					<tr>
+						<td>
+							
+						</td>
+					</tr>
+					<tr>
+						<td align="right">
+							
+						</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td>
+							<img id="ctl00_cph1_imgOrbit" src="orbitdisplay.aspx?icon=default&amp;width=250&amp;height=250&amp;mode=n&amp;satid=25544" alt="View from orbit pole" height="250" width="250" border="0" />
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<span id="ctl00_cph1_lblOrbitPictureCaption"></span>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+				&nbsp;
+				<p />
+				<table style="border-top: 1px solid black;">
+					<tr>
+						<td valign="top" style="width: 100px">
+							<a href="https://twitter.com/heavensabovecom?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @heavensabovecom</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<!--<a id="ctl00_linkDonate" title="Make a donation to help with the running costs of Heavens-Above" href="Donate2.aspx"><img title="Make a donation to help with the running costs of Heavens-Above" src="//heavens-above.com/images/btn_donate_SM.gif" alt="" border="0" /></a>-->
+						</td>
+						<td valign="top">
+							<div class="footer">
+								Developed and maintained by <a href="mailto:Chris.Peat@heavens-above.com">Chris Peat</a>, <a href="https://heavens-above.de">Heavens-Above GmbH</a>. Please read the <a href="faq.aspx">FAQ</a> before sending e-mail. <a href="Imprint.aspx">Imprint</a>.
+								</div>
+						</td>
+						<td>
+							<a href="http://www.dlr.de/rb/en/" target="_blank">
+								<img src="//heavens-above.com/images/dlrhost.gif" align="left" border="0" alt="DLR" /></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td rowspan="1" valign="top">
+				<p />
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+					<p />
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display: inline-block; width: 336px; height: 280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+			</td>
+		</tr>
+	</table>
+	</form>
+    <script src="//tags.onscroll.com/608ff96c-526d-43c0-92d3-5faa546bc80e/tag.min.js" async defer></script>
+</body>
+</html>
