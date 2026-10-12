@@ -1,0 +1,55 @@
+Предсказания сохранены до запуска: 2026-10-12T18:10:49.506904+00:00
+predictions.md SHA-256: bbc50b4031b1ee05e93ab737f86e20d8487ff92c6221425d534ac19e00335724
+
+COMMAND: C:\Users\meowflyx\AppData\Local\Programs\Python\Python313\python.exe -X utf8 PLT\practice_6\task1\task1.py
+INPUT: встроенные данные; stdin не используется
+STDOUT:
+P1
+['новый']
+['новый', 'новый']
+same: True
+P2
+local: [99]
+caller: [1, 2]
+same: True
+P3
+source: [[1, 2]]
+copy: [[1, 2], [3]]
+same outer: False
+same inner: True
+P4
+source: [[1], [1]]
+deep: [[1, 9], [1, 9]]
+same as source: False
+same inside deep: True
+Python: 4/4 OK
+Python edge cases: 4/4 OK
+STDERR:
+(empty)
+EXIT: 0
+
+COMMAND: julia --startup-file=no PLT\practice_6\task1\task1.jl
+INPUT: встроенные данные; stdin не используется
+STDOUT:
+J1
+original: 20
+alias: 20
+same: true
+J2
+setfield!: immutable struct of type Point cannot be changed
+original: 10
+rebound: 20
+J3
+items: [1, 2]
+same vector: true
+setfield!: immutable struct of type Box cannot be changed
+J4
+values: 1 9
+objects: 9 9
+same arrays: false
+same object: true
+Julia: 4/4 OK
+Julia edge cases: 4/4 OK
+STDERR:
+(empty)
+EXIT: 0
