@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust World — Туристическое агентство</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo"><span>Wanderlust</span> World</a>
+      <nav class="nav-menu">
+        <a href="#home">Главная</a>
+        <a href="#destinations">Направления</a>
+        <a href="#responsibilities">Гарантии</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Главный баннер -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Исследуйте прекрасный мир с нами</h1>
+      <p>Мы берем на себя все заботы по организации вашего путешествия, чтобы вы могли сосредоточиться на ярких впечатлениях.</p>
+      <a href="#destinations" class="btn-outline">Узнать больше</a>
+    </div>
+  </section>
+
+  <!-- Секция с популярными направлениями -->
+  <section class="destinations" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <h2>Популярные направления</h2>
+        <p>Откройте для себя лучшие уголки планеты вместе с нами</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Карточка 1: Франция -->
+        <div class="card">
+          <div class="card-image-wrapper" onclick="openDetailsModal('france')">
+            <img src="france1.jpg" alt="Франция">
+            <div class="card-overlay">
+              <span class="info-badge">Подробнее</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="country-title">Франция</h3>
+            <p class="sight-info">Эйфелева башня, Лувр и романтика парижских улочек.</p>
+            <div class="card-footer">
+              <a href="https://ru.wikipedia.org/wiki/Достопримечательности_Парижа" target="_blank" class="sight-link">Достопримечательности (Википедия)</a>
+              <button type="button" class="btn-book" onclick="openBookingModal('Франция')">Забронировать тур</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Карточка 2: Италия -->
+        <div class="card">
+          <div class="card-image-wrapper" onclick="openDetailsModal('italy')">
+            <img src="italy1.jpg" alt="Италия">
+            <div class="card-overlay">
+              <span class="info-badge">Подробнее</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="country-title">Италия</h3>
+            <p class="sight-info">Величие Колизея, каналы Венеции и незабываемая кухня.</p>
+            <div class="card-footer">
+              <a href="https://ru.wikipedia.org/wiki/Колизей" target="_blank" class="sight-link">Достопримечательности (Википедия)</a>
+              <button type="button" class="btn-book" onclick="openBookingModal('Италия')">Забронировать тур</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Карточка 3: Египет -->
+        <div class="card">
+          <div class="card-image-wrapper" onclick="openDetailsModal('egypt')">
+            <img src="egypt1.jpg" alt="Египет">
+            <div class="card-overlay">
+              <span class="info-badge">Подробнее</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="country-title">Египет</h3>
+            <p class="sight-info">Древнейшие пирамиды Гизы и лазурное Красное море.</p>
+            <div class="card-footer">
+              <a href="https://ru.wikipedia.org/wiki/Египетские_пирамиды" target="_blank" class="sight-link">Достопримечательности (Википедия)</a>
+              <button type="button" class="btn-book" onclick="openBookingModal('Египет')">Забронировать тур</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Карточка 4: Япония -->
+        <div class="card">
+          <div class="card-image-wrapper" onclick="openDetailsModal('japan')">
+            <img src="japan1.jpg" alt="Япония">
+            <div class="card-overlay">
+              <span class="info-badge">Подробнее</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="country-title">Япония</h3>
+            <p class="sight-info">Гора Фудзи, цветение сакуры и контраст древности с будущим.</p>
+            <div class="card-footer">
+              <a href="https://ru.wikipedia.org/wiki/Достопримечательности_Японии" target="_blank" class="sight-link">Достопримечательности (Википедия)</a>
+              <button type="button" class="btn-book" onclick="openBookingModal('Япония')">Забронировать тур</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция: Наши обязанности -->
+  <section class="responsibilities" id="responsibilities">
+    <div class="container">
+      <div class="resp-banner">
+        <div class="resp-overlay"></div>
+        <div class="resp-content">
+          <h2>Мы гарантируем</h2>
+          <div class="resp-grid">
+            <div class="resp-card">
+              <div class="resp-icon">✓</div>
+              <h3>Всегда на связи</h3>
+              <p>Круглосуточная поддержка для решения любых вопросов в пути.</p>
+            </div>
+            <div class="resp-card">
+              <div class="resp-icon">✓</div>
+              <h3>Бесплатная отмена</h3>
+              <p>Гибкие тарифы с гарантией возврата средств при отмене.</p>
+            </div>
+            <div class="resp-card">
+              <div class="resp-icon">✓</div>
+              <h3>Прямые стыковки</h3>
+              <p>Удобные рейсы и трансфер от поезда к самолету.</p>
+            </div>
+            <div class="resp-card">
+              <div class="resp-icon">✓</div>
+              <h3>Лучшие предложения</h3>
+              <p>Выгодные готовые пакеты для вашего отдыха.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальное окно с аккруатной сеткой из 3 картинок -->
+  <div id="detailsModal" class="modal">
+    <div class="modal-content modal-details">
+      <span class="close-btn" onclick="closeModal('detailsModal')">&times;</span>
+      <div class="modal-body-details">
+        
+        <!-- Равномерный коллаж из 3 элементов -->
+        <div class="collage-container">
+          <div class="collage-item">
+            <img id="collageImg1" src="" alt="Фото 1">
+          </div>
+          <div class="collage-item">
+            <img id="collageImg2" src="" alt="Фото 2">
+          </div>
+          <div class="collage-item">
+            <img id="collageImg3" src="" alt="Фото 3">
+          </div>
+        </div>
+
+        <div class="modal-info-text">
+          <h2 id="modalCountryTitle"></h2>
+          <p id="modalCountryDesc"></p>
+          <h4>Главные достопримечательности:</h4>
+          <ul id="modalSightsList"></ul>
+          <button type="button" class="btn-book modal-book-btn" id="modalBookActionBtn">Забронировать этот тур</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно: Форма бронирования -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content modal-form">
+      <span class="close-btn" onclick="closeModal('bookingModal')">&times;</span>
+      <h2>Забронировать тур</h2>
+      <p class="booking-subtitle">Выбранное направление: <strong id="bookingCountryName" class="highlight-text"></strong></p>
+      
+      <form onsubmit="handleBookingSubmit(event)">
+        <div class="form-group">
+          <label for="fullName">ФИО</label>
+          <input type="text" id="fullName" placeholder="Иванов Иван Иванович" required>
+        </div>
+
+        <div class="form-group">
+          <label for="travelDate">Желаемая дата поездки</label>
+          <input type="date" id="travelDate" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Номер телефона</label>
+          <input type="tel" id="phone" placeholder="+7 (700) 000-00-00" required>
+        </div>
+
+        <button type="submit" class="btn-book">Подтвердить бронирование</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer class="footer" id="contact">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3><span>Wanderlust</span> World</h3>
+        <p>Создаем незабываемые путешествия по всему миру.</p>
+      </div>
+      <div class="footer-contacts">
+        <h4>Контакты</h4>
+        <p>Телефон: +7 (800) 212-10-00</p>
+        <p>Email: info@wanderlustworld.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wanderlust World.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

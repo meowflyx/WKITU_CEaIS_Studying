@@ -1,0 +1,591 @@
+/* ==========================================================================
+   1. ОБЩИЕ СБРОСЫ И БАЗОВЫЕ СТИЛИ
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   2. ШАПКА САЙТА (NAVBAR)
+   ========================================================================== */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #8a1874;
+}
+
+.nav-menu a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #8a1874;
+}
+
+/* ==========================================================================
+   3. ГЛАВНЫЙ БАННЕР (HERO SECTION)
+   ========================================================================== */
+.hero {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(138, 24, 116, 0.75), rgba(40, 10, 50, 0.65));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #8a1874;
+}
+
+/* ==========================================================================
+   4. СЕКЦИЯ С КАРТОЧКАМИ НАПРАВЛЕНИЙ
+   ========================================================================== */
+.destinations {
+  padding: 80px 0 50px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  color: #8a1874;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(138, 24, 116, 0.2);
+}
+
+.card-image-wrapper {
+  position: relative;
+  display: block;
+  height: 240px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-image-wrapper img {
+  transform: scale(1.08);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(138, 24, 116, 0.35);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.card-image-wrapper:hover .card-overlay {
+  opacity: 1;
+}
+
+.info-badge {
+  background: rgba(255, 255, 255, 0.95);
+  color: #8a1874;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.country-title {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.sight-info {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sight-link {
+  color: #8a1874;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.sight-link:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.btn-book {
+  background: linear-gradient(135deg, #8a1874, #a82894);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.btn-book:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* ==========================================================================
+   5. СЕКЦИЯ: НАШИ ОБЯЗАТЕЛЬСТВА
+   ========================================================================== */
+.responsibilities {
+  padding: 40px 0 80px;
+}
+
+.resp-banner {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  padding: 50px 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.resp-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(60, 20, 65, 0.75), rgba(138, 24, 116, 0.6));
+}
+
+.resp-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.resp-content h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.resp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.resp-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 30px 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.resp-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.resp-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #8a1874;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.resp-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resp-card p {
+  font-size: 13px;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   6. МОДАЛЬНЫЕ ОКНА И АДЕКВАТНОЕ РАСПОЛОЖЕНИЕ КАРТИНОК В КОЛЛАЖЕ
+   ========================================================================== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 5, 20, 0.75);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal.active {
+  display: flex !important;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: modalFadeIn 0.3s ease;
+  overflow: hidden;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Аккуратная сетка для 3 картинок вверху модального окна */
+.collage-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 20px 20px 0 20px;
+}
+
+.collage-item {
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.collage-item img:hover {
+  transform: scale(1.08);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #8a1874;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s;
+  background: rgba(255, 255, 255, 0.9);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.close-btn:hover {
+  color: #fff;
+  background: #8a1874;
+}
+
+.modal-body-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-info-text {
+  padding: 25px;
+}
+
+.modal-info-text h2 {
+  color: #8a1874;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.modal-info-text p {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.modal-info-text h4 {
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.modal-info-text ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.modal-book-btn {
+  margin-top: 10px;
+}
+
+/* Форма бронирования */
+.modal-form {
+  padding: 35px 30px;
+  max-width: 480px;
+}
+
+.modal-form h2 {
+  color: #8a1874;
+  font-size: 26px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.booking-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.highlight-text {
+  color: #8a1874;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #8a1874;
+  box-shadow: 0 0 5px rgba(138, 24, 116, 0.2);
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 600px) {
+  .collage-container {
+    grid-template-columns: 1fr;
+  }
+  .collage-item {
+    height: 150px;
+  }
+}
+
+/* ==========================================================================
+   7. ПОДВАЛ (FOOTER)
+   ========================================================================== */
+.footer {
+  background: #1a0818;
+  color: #ddd;
+  padding: 50px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-brand h3 span {
+  color: #e052c3;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  color: #888;
+}
