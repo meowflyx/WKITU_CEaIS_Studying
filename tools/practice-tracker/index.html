@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Журнал практических работ по ЯТП и ИКТ">
+  <title>Практики ВТиИС</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="#all"><span class="mark" aria-hidden="true">▤</span> Практики ВТиИС</a>
+      <a class="repo" href="https://github.com/meowflyx/WKITU_CEaIS_Studying/tree/Andrey" target="_blank" rel="noopener">Репозиторий <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="eyebrow"><span></span> ЗКИТУ / ЯТП + ИКТ</p>
+        <h1>Журнал практик</h1>
+        <p>Задания, отчёты и план на следующую сдачу.</p>
+      </div>
+      <a class="button accent" href="#next">Что закрыть следующим <span aria-hidden="true">→</span></a>
+    </section>
+    <section class="stats" aria-label="Сводка" id="stats"></section>
+    <div class="workbench">
+      <aside>
+        <nav aria-label="Разделы журнала" id="nav"></nav>
+        <div class="rules">
+          <h2>Форматы работ</h2>
+          <p>Отчёты <b>Markdown · DOCX</b></p>
+          <p>Код <b>Python</b></p>
+          <p>Сравнение языков <b>Julia</b></p>
+        </div>
+      </aside>
+      <section class="content" aria-labelledby="heading">
+        <p id="kicker" class="kicker">ЖУРНАЛ / 01</p>
+        <h2 id="heading" tabindex="-1">Все практики</h2>
+        <p id="description" class="description">Предметы, темы практик и задания из методичек.</p>
+        <div class="filters">
+          <div id="subjects" class="segments" role="group" aria-label="Предмет">
+            <button type="button" data-subject="" aria-pressed="true">Все предметы</button>
+            <button type="button" data-subject="PLT" aria-pressed="false">ЯТП</button>
+            <button type="button" data-subject="ICT" aria-pressed="false">ИКТ</button>
+          </div>
+          <input type="search" id="search" aria-label="Поиск задания" placeholder="Найти задание…">
+        </div>
+        <p id="notice" class="notice" role="status">Загружаю журнал…</p>
+        <div id="list" aria-busy="true"></div>
+      </section>
+    </div>
+    <footer>Учебный журнал ВТиИС <span id="snapshot"></span></footer>
+  </main>
+  <dialog id="editor" aria-labelledby="edit-title">
+    <form id="edit-form">
+      <div class="dialog-heading"><div><p class="kicker" id="edit-context"></p><h2 id="edit-title"></h2></div><button type="button" class="icon-button" id="close-edit" aria-label="Закрыть">×</button></div>
+      <div class="field-grid">
+        <label>Статус<select name="status"><option value="todo">Не начато</option><option value="doing">В работе</option><option value="done">Готово</option></select></label>
+        <label>Приоритет<select name="priority"><option value="0">Низкий</option><option value="1">Обычный</option><option value="2">Высокий</option></select></label>
+        <label class="wide">Ссылка на папку или файл<input name="link" type="url" maxlength="2048" placeholder="https://…"></label>
+        <label class="wide">Заметки<textarea name="notes" rows="3" maxlength="4000" placeholder="Что уже сделано и что осталось"></textarea></label>
+        <label>Осталось минут<input type="number" name="minutes" min="1" max="10000" required></label>
+        <div class="checks"><label><input type="checkbox" name="planned"> В плане</label><label><input type="checkbox" name="required"> Обязательное</label><label><input type="checkbox" name="near"> Почти готово</label></div>
+      </div>
+      <p id="save-error" class="error" role="alert"></p>
+      <div class="dialog-actions"><button class="button quiet" type="button" id="cancel-edit">Отмена</button><button class="button primary" type="submit">Сохранить</button></div>
+    </form>
+  </dialog>
+</body>
+</html>
