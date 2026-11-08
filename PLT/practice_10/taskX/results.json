@@ -1,0 +1,144 @@
+{
+  "faults": {
+    "slow": "TimeoutError",
+    "error": "HTTPError",
+    "disconnect": "RemoteDisconnected",
+    "duplicate": "ValueError"
+  },
+  "python": "3.13.15",
+  "sqlalchemy": "2.0.57",
+  "sqlite": "3.50.4",
+  "orders": 5000,
+  "items": 15000,
+  "selected_orders": 140,
+  "warmup": 3,
+  "trials": 7,
+  "observations": [
+    {
+      "stage": "before_index",
+      "method": "lazy",
+      "requests": 281,
+      "median_s": 0.10790590000033262,
+      "min_s": 0.1002734000030614,
+      "max_s": 0.11295350000000326,
+      "samples_s": [
+        0.1097652000025846,
+        0.11295350000000326,
+        0.11015530000076978,
+        0.10790590000033262,
+        0.1002734000030614,
+        0.10334720000173547,
+        0.10083659999872907
+      ]
+    },
+    {
+      "stage": "before_index",
+      "method": "eager",
+      "requests": 1,
+      "median_s": 0.05898939999678987,
+      "min_s": 0.05363539999962086,
+      "max_s": 0.06698600000163424,
+      "samples_s": [
+        0.058929999999236315,
+        0.05898939999678987,
+        0.06698600000163424,
+        0.05363539999962086,
+        0.05857399999877089,
+        0.06055429999832995,
+        0.05932169999869075
+      ]
+    },
+    {
+      "stage": "before_index",
+      "method": "sql",
+      "requests": 1,
+      "median_s": 0.002757700000074692,
+      "min_s": 0.0025872000005620066,
+      "max_s": 0.003162600001815008,
+      "samples_s": [
+        0.003162600001815008,
+        0.002757700000074692,
+        0.002786299999570474,
+        0.0026561000013316516,
+        0.0025872000005620066,
+        0.002687500000320142,
+        0.0028509999974630773
+      ]
+    },
+    {
+      "stage": "after_index",
+      "method": "lazy",
+      "requests": 281,
+      "median_s": 0.07204529999944498,
+      "min_s": 0.06861149999895133,
+      "max_s": 0.15697950000321725,
+      "samples_s": [
+        0.06861149999895133,
+        0.070488800000021,
+        0.07456019999881391,
+        0.0705813999993552,
+        0.07204529999944498,
+        0.1081573000010394,
+        0.15697950000321725
+      ]
+    },
+    {
+      "stage": "after_index",
+      "method": "eager",
+      "requests": 1,
+      "median_s": 0.011930099997698562,
+      "min_s": 0.00972620000175084,
+      "max_s": 0.030498000000079628,
+      "samples_s": [
+        0.030498000000079628,
+        0.0198225000021921,
+        0.011930099997698562,
+        0.010799200001201825,
+        0.00972620000175084,
+        0.01101600000038161,
+        0.027604399998381268
+      ]
+    },
+    {
+      "stage": "after_index",
+      "method": "sql",
+      "requests": 1,
+      "median_s": 0.003368200003023958,
+      "min_s": 0.002790300000924617,
+      "max_s": 0.008586500000092201,
+      "samples_s": [
+        0.008586500000092201,
+        0.002790300000924617,
+        0.005398500001319917,
+        0.0033370999990438577,
+        0.0036359000005177222,
+        0.0033560999982000794,
+        0.003368200003023958
+      ]
+    }
+  ],
+  "plans": {
+    "before_index": [
+      "CO-ROUTINE (subquery-2)",
+      "CO-ROUTINE (subquery-3)",
+      "SCAN i",
+      "SEARCH o USING INTEGER PRIMARY KEY (rowid=?)",
+      "SEARCH c USING INTEGER PRIMARY KEY (rowid=?)",
+      "USE TEMP B-TREE FOR ORDER BY",
+      "SCAN (subquery-3)",
+      "SCAN (subquery-2)",
+      "USE TEMP B-TREE FOR ORDER BY"
+    ],
+    "after_index": [
+      "CO-ROUTINE (subquery-2)",
+      "CO-ROUTINE (subquery-3)",
+      "SEARCH o USING INDEX ix_orders_date (created_at>? AND created_at<?)",
+      "SEARCH c USING INTEGER PRIMARY KEY (rowid=?)",
+      "SEARCH i USING INDEX ix_items_order (order_id=?)",
+      "USE TEMP B-TREE FOR ORDER BY",
+      "SCAN (subquery-3)",
+      "SCAN (subquery-2)",
+      "USE TEMP B-TREE FOR ORDER BY"
+    ]
+  }
+}

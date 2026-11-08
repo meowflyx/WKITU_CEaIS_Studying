@@ -1,0 +1,1712 @@
+before_index lazy: 281 SELECT statements
+1. SELECT orders.id, orders.customer_id, orders.created_at 
+FROM orders 
+WHERE orders.created_at >= ? AND orders.created_at < ? | ('2026-06-01', '2026-06-11')
+2. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (151,)
+3. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (151,)
+4. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (152,)
+5. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (152,)
+6. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (153,)
+7. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (153,)
+8. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (154,)
+9. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (154,)
+10. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (155,)
+11. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (155,)
+12. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (156,)
+13. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (156,)
+14. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (157,)
+15. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (157,)
+16. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (158,)
+17. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (158,)
+18. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (159,)
+19. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (159,)
+20. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (160,)
+21. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (160,)
+22. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (516,)
+23. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (516,)
+24. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (517,)
+25. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (517,)
+26. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (518,)
+27. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (518,)
+28. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (519,)
+29. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (519,)
+30. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (520,)
+31. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (520,)
+32. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (521,)
+33. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (521,)
+34. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (522,)
+35. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (522,)
+36. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (523,)
+37. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (523,)
+38. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (524,)
+39. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (524,)
+40. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (525,)
+41. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (525,)
+42. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (881,)
+43. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (881,)
+44. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (882,)
+45. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (882,)
+46. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (883,)
+47. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (883,)
+48. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (884,)
+49. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (884,)
+50. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (885,)
+51. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (885,)
+52. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (886,)
+53. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (886,)
+54. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (887,)
+55. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (887,)
+56. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (888,)
+57. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (888,)
+58. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (889,)
+59. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (889,)
+60. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (890,)
+61. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (890,)
+62. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1246,)
+63. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1246,)
+64. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1247,)
+65. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1247,)
+66. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1248,)
+67. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1248,)
+68. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1249,)
+69. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1249,)
+70. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1250,)
+71. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1250,)
+72. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1251,)
+73. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1251,)
+74. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1252,)
+75. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1252,)
+76. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1253,)
+77. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1253,)
+78. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1254,)
+79. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1254,)
+80. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1255,)
+81. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1255,)
+82. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1611,)
+83. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1611,)
+84. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1612,)
+85. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1612,)
+86. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1613,)
+87. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1613,)
+88. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1614,)
+89. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1614,)
+90. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1615,)
+91. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1615,)
+92. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1616,)
+93. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1616,)
+94. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1617,)
+95. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1617,)
+96. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1618,)
+97. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1618,)
+98. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1619,)
+99. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1619,)
+100. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1620,)
+101. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1620,)
+102. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1976,)
+103. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1976,)
+104. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1977,)
+105. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1977,)
+106. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1978,)
+107. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1978,)
+108. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1979,)
+109. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1979,)
+110. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1980,)
+111. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1980,)
+112. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1981,)
+113. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1981,)
+114. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1982,)
+115. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1982,)
+116. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1983,)
+117. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1983,)
+118. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1984,)
+119. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1984,)
+120. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1985,)
+121. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1985,)
+122. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2341,)
+123. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2341,)
+124. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2342,)
+125. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2342,)
+126. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2343,)
+127. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2343,)
+128. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2344,)
+129. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2344,)
+130. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2345,)
+131. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2345,)
+132. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2346,)
+133. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2346,)
+134. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2347,)
+135. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2347,)
+136. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2348,)
+137. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2348,)
+138. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2349,)
+139. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2349,)
+140. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2350,)
+141. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2350,)
+142. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2706,)
+143. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2706,)
+144. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2707,)
+145. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2707,)
+146. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2708,)
+147. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2708,)
+148. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2709,)
+149. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2709,)
+150. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2710,)
+151. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2710,)
+152. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2711,)
+153. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2711,)
+154. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2712,)
+155. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2712,)
+156. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2713,)
+157. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2713,)
+158. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2714,)
+159. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2714,)
+160. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2715,)
+161. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2715,)
+162. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3071,)
+163. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3071,)
+164. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3072,)
+165. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3072,)
+166. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3073,)
+167. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3073,)
+168. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3074,)
+169. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3074,)
+170. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3075,)
+171. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3075,)
+172. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3076,)
+173. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3076,)
+174. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3077,)
+175. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3077,)
+176. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3078,)
+177. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3078,)
+178. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3079,)
+179. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3079,)
+180. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3080,)
+181. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3080,)
+182. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3436,)
+183. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3436,)
+184. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3437,)
+185. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3437,)
+186. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3438,)
+187. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3438,)
+188. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3439,)
+189. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3439,)
+190. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3440,)
+191. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3440,)
+192. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3441,)
+193. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3441,)
+194. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3442,)
+195. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3442,)
+196. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3443,)
+197. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3443,)
+198. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3444,)
+199. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3444,)
+200. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3445,)
+201. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3445,)
+202. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3801,)
+203. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3801,)
+204. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3802,)
+205. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3802,)
+206. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3803,)
+207. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3803,)
+208. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3804,)
+209. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3804,)
+210. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3805,)
+211. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3805,)
+212. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3806,)
+213. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3806,)
+214. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3807,)
+215. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3807,)
+216. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3808,)
+217. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3808,)
+218. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3809,)
+219. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3809,)
+220. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3810,)
+221. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3810,)
+222. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4166,)
+223. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4166,)
+224. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4167,)
+225. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4167,)
+226. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4168,)
+227. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4168,)
+228. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4169,)
+229. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4169,)
+230. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4170,)
+231. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4170,)
+232. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4171,)
+233. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4171,)
+234. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4172,)
+235. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4172,)
+236. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4173,)
+237. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4173,)
+238. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4174,)
+239. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4174,)
+240. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4175,)
+241. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4175,)
+242. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4531,)
+243. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4531,)
+244. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4532,)
+245. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4532,)
+246. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4533,)
+247. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4533,)
+248. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4534,)
+249. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4534,)
+250. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4535,)
+251. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4535,)
+252. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4536,)
+253. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4536,)
+254. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4537,)
+255. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4537,)
+256. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4538,)
+257. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4538,)
+258. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4539,)
+259. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4539,)
+260. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4540,)
+261. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4540,)
+262. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4896,)
+263. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4896,)
+264. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4897,)
+265. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4897,)
+266. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4898,)
+267. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4898,)
+268. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4899,)
+269. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4899,)
+270. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4900,)
+271. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4900,)
+272. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4901,)
+273. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4901,)
+274. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4902,)
+275. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4902,)
+276. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4903,)
+277. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4903,)
+278. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4904,)
+279. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4904,)
+280. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4905,)
+281. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4905,)
+before_index eager: 1 SELECT statements
+1. SELECT orders.id, orders.customer_id, orders.created_at, customers_1.id AS id_1, customers_1.name, items_1.id AS id_2, items_1.order_id, items_1.title, items_1.quantity, items_1.unit_price 
+FROM orders LEFT OUTER JOIN customers AS customers_1 ON customers_1.id = orders.customer_id LEFT OUTER JOIN items AS items_1 ON orders.id = items_1.order_id 
+WHERE orders.created_at >= ? AND orders.created_at < ? ORDER BY items_1.id | ('2026-06-01', '2026-06-11')
+before_index sql: 1 SELECT statements
+1. SELECT o.id, c.name, i.id AS item_id, i.title, i.quantity, i.unit_price,
+       SUM(i.quantity * i.unit_price) OVER (PARTITION BY o.id) AS total
+FROM orders AS o
+JOIN customers AS c ON c.id = o.customer_id
+JOIN items AS i ON i.order_id = o.id
+WHERE o.created_at >= ? AND o.created_at < ?
+ORDER BY total DESC, o.id, i.id | ('2026-06-01', '2026-06-11')
+after_index lazy: 281 SELECT statements
+1. SELECT orders.id, orders.customer_id, orders.created_at 
+FROM orders 
+WHERE orders.created_at >= ? AND orders.created_at < ? | ('2026-06-01', '2026-06-11')
+2. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (151,)
+3. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (151,)
+4. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (516,)
+5. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (516,)
+6. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (881,)
+7. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (881,)
+8. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1246,)
+9. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1246,)
+10. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1611,)
+11. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1611,)
+12. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1976,)
+13. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1976,)
+14. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2341,)
+15. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2341,)
+16. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2706,)
+17. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2706,)
+18. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3071,)
+19. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3071,)
+20. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3436,)
+21. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3436,)
+22. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3801,)
+23. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3801,)
+24. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4166,)
+25. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4166,)
+26. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4531,)
+27. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4531,)
+28. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4896,)
+29. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4896,)
+30. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (152,)
+31. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (152,)
+32. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (517,)
+33. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (517,)
+34. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (882,)
+35. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (882,)
+36. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1247,)
+37. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1247,)
+38. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1612,)
+39. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1612,)
+40. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1977,)
+41. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1977,)
+42. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2342,)
+43. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2342,)
+44. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2707,)
+45. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2707,)
+46. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3072,)
+47. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3072,)
+48. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3437,)
+49. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3437,)
+50. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3802,)
+51. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3802,)
+52. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4167,)
+53. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4167,)
+54. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4532,)
+55. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4532,)
+56. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4897,)
+57. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4897,)
+58. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (153,)
+59. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (153,)
+60. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (518,)
+61. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (518,)
+62. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (883,)
+63. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (883,)
+64. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1248,)
+65. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1248,)
+66. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1613,)
+67. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1613,)
+68. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1978,)
+69. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1978,)
+70. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2343,)
+71. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2343,)
+72. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2708,)
+73. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2708,)
+74. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3073,)
+75. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3073,)
+76. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3438,)
+77. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3438,)
+78. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3803,)
+79. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3803,)
+80. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4168,)
+81. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4168,)
+82. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4533,)
+83. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4533,)
+84. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4898,)
+85. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4898,)
+86. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (154,)
+87. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (154,)
+88. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (519,)
+89. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (519,)
+90. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (884,)
+91. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (884,)
+92. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1249,)
+93. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1249,)
+94. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1614,)
+95. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1614,)
+96. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1979,)
+97. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1979,)
+98. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2344,)
+99. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2344,)
+100. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2709,)
+101. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2709,)
+102. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3074,)
+103. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3074,)
+104. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3439,)
+105. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3439,)
+106. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3804,)
+107. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3804,)
+108. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4169,)
+109. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4169,)
+110. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4534,)
+111. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4534,)
+112. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4899,)
+113. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4899,)
+114. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (155,)
+115. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (155,)
+116. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (520,)
+117. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (520,)
+118. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (885,)
+119. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (885,)
+120. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1250,)
+121. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1250,)
+122. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1615,)
+123. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1615,)
+124. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1980,)
+125. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1980,)
+126. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2345,)
+127. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2345,)
+128. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2710,)
+129. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2710,)
+130. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3075,)
+131. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3075,)
+132. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3440,)
+133. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3440,)
+134. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3805,)
+135. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3805,)
+136. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4170,)
+137. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4170,)
+138. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4535,)
+139. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4535,)
+140. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4900,)
+141. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4900,)
+142. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (156,)
+143. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (156,)
+144. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (521,)
+145. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (521,)
+146. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (886,)
+147. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (886,)
+148. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1251,)
+149. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1251,)
+150. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1616,)
+151. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1616,)
+152. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1981,)
+153. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1981,)
+154. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2346,)
+155. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2346,)
+156. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2711,)
+157. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2711,)
+158. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3076,)
+159. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3076,)
+160. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3441,)
+161. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3441,)
+162. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3806,)
+163. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3806,)
+164. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4171,)
+165. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4171,)
+166. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4536,)
+167. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4536,)
+168. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4901,)
+169. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4901,)
+170. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (157,)
+171. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (157,)
+172. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (522,)
+173. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (522,)
+174. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (887,)
+175. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (887,)
+176. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1252,)
+177. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1252,)
+178. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1617,)
+179. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1617,)
+180. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1982,)
+181. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1982,)
+182. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2347,)
+183. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2347,)
+184. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2712,)
+185. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2712,)
+186. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3077,)
+187. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3077,)
+188. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3442,)
+189. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3442,)
+190. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3807,)
+191. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3807,)
+192. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4172,)
+193. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4172,)
+194. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4537,)
+195. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4537,)
+196. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4902,)
+197. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4902,)
+198. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (158,)
+199. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (158,)
+200. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (523,)
+201. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (523,)
+202. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (888,)
+203. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (888,)
+204. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1253,)
+205. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1253,)
+206. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1618,)
+207. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1618,)
+208. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1983,)
+209. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1983,)
+210. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2348,)
+211. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2348,)
+212. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2713,)
+213. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2713,)
+214. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3078,)
+215. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3078,)
+216. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3443,)
+217. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3443,)
+218. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3808,)
+219. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3808,)
+220. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4173,)
+221. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4173,)
+222. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4538,)
+223. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4538,)
+224. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4903,)
+225. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4903,)
+226. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (159,)
+227. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (159,)
+228. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (524,)
+229. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (524,)
+230. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (889,)
+231. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (889,)
+232. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1254,)
+233. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1254,)
+234. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1619,)
+235. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1619,)
+236. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1984,)
+237. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1984,)
+238. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2349,)
+239. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2349,)
+240. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2714,)
+241. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2714,)
+242. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3079,)
+243. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3079,)
+244. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3444,)
+245. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3444,)
+246. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3809,)
+247. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3809,)
+248. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4174,)
+249. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4174,)
+250. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4539,)
+251. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4539,)
+252. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4904,)
+253. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4904,)
+254. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (160,)
+255. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (160,)
+256. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (525,)
+257. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (525,)
+258. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (890,)
+259. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (890,)
+260. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1255,)
+261. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1255,)
+262. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1620,)
+263. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1620,)
+264. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (1985,)
+265. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (1985,)
+266. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2350,)
+267. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2350,)
+268. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (2715,)
+269. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (2715,)
+270. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3080,)
+271. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3080,)
+272. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3445,)
+273. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3445,)
+274. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (3810,)
+275. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (3810,)
+276. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4175,)
+277. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4175,)
+278. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4540,)
+279. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4540,)
+280. SELECT items.id AS items_id, items.order_id AS items_order_id, items.title AS items_title, items.quantity AS items_quantity, items.unit_price AS items_unit_price 
+FROM items 
+WHERE ? = items.order_id ORDER BY items.id | (4905,)
+281. SELECT customers.id AS customers_id, customers.name AS customers_name 
+FROM customers 
+WHERE customers.id = ? | (4905,)
+after_index eager: 1 SELECT statements
+1. SELECT orders.id, orders.customer_id, orders.created_at, customers_1.id AS id_1, customers_1.name, items_1.id AS id_2, items_1.order_id, items_1.title, items_1.quantity, items_1.unit_price 
+FROM orders LEFT OUTER JOIN customers AS customers_1 ON customers_1.id = orders.customer_id LEFT OUTER JOIN items AS items_1 ON orders.id = items_1.order_id 
+WHERE orders.created_at >= ? AND orders.created_at < ? ORDER BY items_1.id | ('2026-06-01', '2026-06-11')
+after_index sql: 1 SELECT statements
+1. SELECT o.id, c.name, i.id AS item_id, i.title, i.quantity, i.unit_price,
+       SUM(i.quantity * i.unit_price) OVER (PARTITION BY o.id) AS total
+FROM orders AS o
+JOIN customers AS c ON c.id = o.customer_id
+JOIN items AS i ON i.order_id = o.id
+WHERE o.created_at >= ? AND o.created_at < ?
+ORDER BY total DESC, o.id, i.id | ('2026-06-01', '2026-06-11')

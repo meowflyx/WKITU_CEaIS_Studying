@@ -1,0 +1,26 @@
+{
+  "before": {
+    "command": "python -B -m unittest -v test_prices.py",
+    "exit_code": 1,
+    "seconds": 0.07939,
+    "output": "test_half_is_rounded_up (test_prices.PriceTests.test_half_is_rounded_up)\nПоловина минимальной единицы округляется вверх. ... FAIL\ntest_invalid_arguments_are_rejected (test_prices.PriceTests.test_invalid_arguments_are_rejected)\nНедопустимые аргументы дают ValueError. ... ok\ntest_regular_and_full_discount (test_prices.PriceTests.test_regular_and_full_discount)\nНулевая скидка сохраняет цену, полная даёт ноль. ... ok\ntest_zero_amount_and_large_integer (test_prices.PriceTests.test_zero_amount_and_large_integer)\nЦелочисленный расчёт не теряет точность на большой сумме. ... FAIL\n\n======================================================================\nFAIL: test_half_is_rounded_up (test_prices.PriceTests.test_half_is_rounded_up)\nПоловина минимальной единицы округляется вверх.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\meowflyx\\AppData\\Local\\Temp\\plt13-experiment-_vh74lx0\\test_prices.py\", line 18, in test_half_is_rounded_up\n    self.assertEqual(discounted_price(101, 50), 51)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 50 != 51\n\n======================================================================\nFAIL: test_zero_amount_and_large_integer (test_prices.PriceTests.test_zero_amount_and_large_integer)\nЦелочисленный расчёт не теряет точность на большой сумме.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\meowflyx\\AppData\\Local\\Temp\\plt13-experiment-_vh74lx0\\test_prices.py\", line 31, in test_zero_amount_and_large_integer\n    self.assertEqual(discounted_price(10**20 + 1, 0), 10**20 + 1)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 100000000000000000000 != 100000000000000000001\n\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nFAILED (failures=2)\n"
+  },
+  "after": {
+    "command": "python -B check.py",
+    "exit_code": 0,
+    "seconds": 1.260356,
+    "output": "2 files left unchanged\nINTEGRITY_OK\nformat: exit=0\nAll checks passed!\nlint: exit=0\nSuccess: no issues found in 2 source files\ntypes: exit=0\nbuild: exit=0\ntests: exit=0\nINTEGRITY_OK\nCHECK_OK: 1.188393 s\ntest_half_is_rounded_up (test_prices.PriceTests.test_half_is_rounded_up)\nПоловина минимальной единицы округляется вверх. ... ok\ntest_invalid_arguments_are_rejected (test_prices.PriceTests.test_invalid_arguments_are_rejected)\nНедопустимые аргументы дают ValueError. ... ok\ntest_regular_and_full_discount (test_prices.PriceTests.test_regular_and_full_discount)\nНулевая скидка сохраняет цену, полная даёт ноль. ... ok\ntest_zero_amount_and_large_integer (test_prices.PriceTests.test_zero_amount_and_large_integer)\nЦелочисленный расчёт не теряет точность на большой сумме. ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+  },
+  "weakened_config": {
+    "command": "python -B check.py",
+    "exit_code": 1,
+    "seconds": 0.061289,
+    "output": "INTEGRITY_FAIL: pyproject.toml\n"
+  },
+  "weakened_test": {
+    "command": "python -B check.py",
+    "exit_code": 1,
+    "seconds": 0.060333,
+    "output": "INTEGRITY_FAIL: test_prices.py\n"
+  }
+}

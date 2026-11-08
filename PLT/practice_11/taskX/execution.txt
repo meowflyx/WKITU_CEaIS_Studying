@@ -1,0 +1,51 @@
+Executed 2026-11-08T19:54:31.571363+05:00
+
+COMMAND: C:\Users\meowflyx\AppData\Roaming\uv\python\cpython-3.13-windows-x86_64-none\python.exe -B -X utf8 task1.py
+INPUT: named injected scenarios; no network
+EXIT: 0
+{"scenario": "empty", "status": "STOP", "attempts": 0, "rows": 0, "message": "ValueError: file: expected at least one row, got empty"}
+{"scenario": "quantity", "status": "STOP", "attempts": 0, "rows": 0, "message": "ValueError: quantity: expected >= 1, got -1"}
+{"scenario": "missing_file", "status": "STOP", "attempts": 0, "rows": 0, "message": "FileNotFoundError: input.csv: file not found"}
+{"scenario": "timeout_once", "status": "OK", "attempts": 2, "rows": 2, "message": ""}
+{"scenario": "timeout_always", "status": "STOP", "attempts": 3, "rows": 0, "message": "TimeoutError: catalog: deadline exceeded"}
+{"scenario": "catalog_contract", "status": "STOP", "attempts": 1, "rows": 0, "message": "ValueError: catalog.code: required nonempty value"}
+{"scenario": "capacity", "status": "STOP", "attempts": 0, "rows": 0, "message": "OverflowError: rows: limit 100, got 101"}
+{"scenario": "invariant", "status": "STOP", "attempts": 1, "rows": 0, "message": "ArithmeticError: internal invariant: total >= 0 violated"}
+{"scenario": "partial_save", "status": "STOP", "attempts": 1, "rows": 0, "message": "OperationalError: injected after first INSERT; rolled back"}
+{"scenario": "notify", "status": "PARTIAL", "attempts": 1, "rows": 2, "message": "notification unavailable; data saved"}
+PARTIAL_SAVE (1, 3, 0)
+
+
+COMMAND: C:\Users\meowflyx\AppData\Roaming\uv\python\cpython-3.13-windows-x86_64-none\python.exe -B -X utf8 -m unittest -v test_task1.py
+INPUT: named injected scenarios; no network
+EXIT: 0
+test_partial_commit_is_detected_and_transaction_rolls_back (test_task1.FailureTests.test_partial_commit_is_detected_and_transaction_rolls_back)
+Неатомарная версия оставляет строку, исправленная нет. ... ok
+test_retry_limit_and_eventual_recovery (test_task1.FailureTests.test_retry_limit_and_eventual_recovery)
+Повтор не бесконечен и помогает только временному отказу. ... ok
+test_success_and_notification_degradation (test_task1.FailureTests.test_success_and_notification_degradation)
+Успешный основной результат отличается от неполного ответа. ... ok
+test_ten_injected_failures_match_contract (test_task1.FailureTests.test_ten_injected_failures_match_contract)
+Каждый сценарий даёт заранее определённый исход. ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+
+
+COMMAND: julia --startup-file=no task1.jl
+INPUT: named injected scenarios; no network
+EXIT: 0
+empty	STOP	0	0	ArgumentError: file: empty
+quantity	STOP	0	0	ArgumentError: quantity: expected >= 1, got -1
+missing_file	STOP	0	0	SystemError: input.csv: No such file or directory
+timeout_once	OK	2	2	
+timeout_always	STOP	3	0	catalog: deadline exceeded
+catalog_contract	STOP	1	0	ArgumentError: catalog.code: required nonempty value
+capacity	STOP	0	0	OverflowError: rows: limit 100, got 101
+invariant	STOP	1	0	DomainError with -1:
+internal invariant: total >= 0
+partial_save	STOP	1	0	IOError: injected after first insert
+notify	PARTIAL	1	2	notification unavailable; data saved
+JULIA_OK: 10 failures, retry limit, normal case

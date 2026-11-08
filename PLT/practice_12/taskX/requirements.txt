@@ -1,0 +1,2 @@
+cosmic-ray==8.8.0
+coverage==7.17.2

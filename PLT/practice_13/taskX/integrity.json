@@ -1,0 +1,6 @@
+{
+  "pyproject.toml": "fd54a9aced3a83f6d546f308cce057decaa203dda112e2a9b9289b3a49e71af0",
+  "requirements.txt": "377f6946cb59182fc7a68436854436860450c4b076e5d5709c9aa6be937df47f",
+  "test_prices.py": "d7056f08a8123faa972e9c7b7a61f898b9ceacd04ab8e9d5dfcfcefc7b96ae4f",
+  "check.py": "43808722f6627a29a901f6d591fa1f2a00e8fb65e53f8108dda9acaf3618aa4c"
+}
